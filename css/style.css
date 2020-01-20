@@ -855,4 +855,12 @@
         .money-back-form .money-back-form-container > div .disclaimer{
             margin-top: 50px;
         }
+        #banner .banner-title{
+            font-size: 40px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0px;
+            white-space: nowrap;
+        }
     }
