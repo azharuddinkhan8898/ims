@@ -600,6 +600,65 @@
         margin: 0px;
         margin-top: 25px;
     }
+
+    #home-selection{
+      background-color: #fff;
+      height: 100vh;
+      width: 100%;
+      position: relative;
+      min-height: 400px;
+    }
+
+    #home-selection .home-banner{
+      position: absolute;
+      max-height: 100%;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+    }
+
+    #home-selection .content{
+      position: absolute;
+      z-index: 1;
+      text-align: center;
+      left: 45%;
+      transform: translateX(-50%);
+      margin-top: 20px;
+    }
+    #home-selection .content img.logo{
+      width: 150px;
+      margin-bottom: 5px;
+    }
+
+    #home-selection .content h2{
+      font-size: 25px;
+    font-weight: bold;
+    }
+    
+    #home-selection .content h2 span{
+      font-size: 35px;
+    }
+
+    #home-selection .cat-btn, #home-selection .dog-btn{
+      background: #ec723e;
+      color: #fff;
+      padding: 5px 20px;
+      position: absolute;
+      font-size: 20px;
+      border-radius: 15px;
+      text-decoration: none;
+      bottom: 50px;
+      left: 13%;
+    }
+
+    #home-selection .dog-btn{
+      background:#159942;
+      left: unset;
+      right: 13%;
+    }
+
+
     
     
     /* */
