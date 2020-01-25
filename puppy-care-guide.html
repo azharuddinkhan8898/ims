@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IAMS</title>
+  </head>
+
+  <body>
+    <div id="loader">
+      <div><img src="images/loader.gif" /></div>
+    </div>
+    <header>
+      <div class="container-fluid">
+        <div class="logo pull-left">
+          <a href="/"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <div id="navigation" class="pull-right">
+          <div class="menu-ico"><i></i></div>
+          <div id="main-nav">
+            <ul class="pull-left">
+              <li><a href="#banner">Home</a></li>
+              <li>
+                <a href="#why">Why IAMS<sup>TM</sup></a>
+              </li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#history-iams">History</a></li>
+              <li>
+                <a href="javascript:void(0)" class="button outline small buyNow"
+                  >Buy Now</a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="store-locator"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Store Locator');"
+                      ><img src="images/store-locator.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.in/s?i=pets&amp;bbn=4771342031&amp;rh=n%3A2454181031%2Cn%3A%214740420031%2Cn%3A4771342031%2Cn%3A4771395031%2Cp_89%3AIAMS&amp;dc&amp;hidden-keywords=B081VY4KCS%7CB081VXYRX9%7CB081VY96ZY%7CB081VXG85T%7CB0815L84C9%7CB0815L7WWQ%7CB0815L8XFN%7CB0815LD3NF%7CB0815LGC2T%7CB0815KXTY4%7CB0815LT44B%7CB0815LCJWG%7CB0815LTK2X%7CB0815LGB8V%7CB0815LF82M&amp;qid=1575523072&amp;rnid=4771342031&amp;ref=sr_nr_n_1/"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Amazon');"
+                      ><img src="images/amazon.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a
+              href="#banner"
+              class="button button-fill pull-right"
+              id="sample-btn"
+              onclick="ga('send','event','Top_Navigation','click','Grab your free sample');"
+              >Grab Your Sample</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <h1 class="banner-title">Dog Articles</h1>
+      <div id="main-slider">
+        <a href="javascript:void(0)" class="db"
+          ><img src="images/banner-1.png" alt="" title="" width="100%"
+        /></a>
+        <a href="javascript:void(0)" class="mb"
+          ><img src="images/banner-1.png" alt="" title="" width="100%"
+        /></a>
+      </div>
+    </section>
+    <section class="blogs padding-top-bottom-100">
+      <div class="container">
+        <div class="blogs-wrapper">
+          <div class="head">
+            <div class="tabs clearfix">
+              <ul>
+                <li class="active">
+                  <a href="./puppy-care-guide.html">Puppy Care Guide</a>
+                </li>
+                <li><a href="./lifestage-advice.html">Lifestage Advice</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="body clearfix">
+            <div class="filters-wrapper">
+              <p class="filter-text">Filter:</p>
+              <div class="filters">
+                <div class="filter life-stage active">
+                  <a href="javascript:void(0)">Life Stage</a>
+                  <div class="filter-check-wrapper">
+                    <div class="filter-check">
+                      <input type="checkbox" id="puppy" name="puppy" />
+                      <label for="puppy"><span></span>Puppy</label>
+                    </div>
+                    <div class="filter-check">
+                      <input type="checkbox" id="adult-dog" name="adult-dog" />
+                      <label for="adult-dog"><span></span>Adult Dog</label>
+                    </div>
+                    <div class="filter-check">
+                      <input type="checkbox" id="mature" name="mature" />
+                      <label for="mature"><span></span>Mature/Senior</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter special-concerns">
+                  <a href="javascript:void(0)">Special Concerns</a>
+                  <div class="filter-check-wrapper">
+                    <div class="filter-check">
+                      <input type="checkbox" id="puppy1" name="puppy1" />
+                      <label for="puppy1"><span></span>Puppy</label>
+                    </div>
+                    <div class="filter-check">
+                      <input
+                        type="checkbox"
+                        id="adult-dog1"
+                        name="adult-dog1"
+                      />
+                      <label for="adult-dog1"><span></span>Adult Dog</label>
+                    </div>
+                    <div class="filter-check">
+                      <input type="checkbox" id="mature1" name="mature1" />
+                      <label for="mature1"><span></span>Mature/Senior</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter nutrition">
+                  <a href="javascript:void(0)">Nutrition</a>
+                  <div class="filter-check-wrapper">
+                    <div class="filter-check">
+                      <input type="checkbox" id="puppy2" name="puppy2" />
+                      <label for="puppy2"><span></span>Puppy</label>
+                    </div>
+                    <div class="filter-check">
+                      <input
+                        type="checkbox"
+                        id="adult-dog2"
+                        name="adult-dog2"
+                      />
+                      <label for="adult-dog2"><span></span>Adult Dog</label>
+                    </div>
+                    <div class="filter-check">
+                      <input type="checkbox" id="mature2" name="mature2" />
+                      <label for="mature2"><span></span>Mature/Senior</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="filter breed-size">
+                  <a href="javascript:void(0)">Breed Size</a>
+                  <div class="filter-check-wrapper">
+                    <div class="filter-check">
+                      <input type="checkbox" id="puppy3" name="puppy3" />
+                      <label for="puppy3"><span></span>Puppy</label>
+                    </div>
+                    <div class="filter-check">
+                      <input
+                        type="checkbox"
+                        id="adult-dog3"
+                        name="adult-dog3"
+                      />
+                      <label for="adult-dog3"><span></span>Adult Dog</label>
+                    </div>
+                    <div class="filter-check">
+                      <input type="checkbox" id="mature3" name="mature3" />
+                      <label for="mature3"><span></span>Mature/Senior</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blogs-list-wrapper">
+              <div class="row">
+                <div class="col-md-6">
+                  <a href="#" class="reset-a">
+                    <div class="wrapper clearfix">
+                      <img src="./images/blog-dog.jpg" alt="" class="" />
+                      <p>Puppy Basics: Feeding Tips for the First 6 Months</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6">
+                  <a href="#" class="reset-a">
+                    <div class="wrapper clearfix">
+                      <p>Puppy Basics: Feeding Tips for the First 6 Months</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6">
+                  <a href="#" class="reset-a">
+                    <div class="wrapper clearfix">
+                      <img src="./images/blog-dog.jpg" alt="" class="" />
+                      <p>Puppy Basics: Feeding Tips for the First 6 Months</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6">
+                  <a href="#" class="reset-a">
+                    <div class="wrapper clearfix">
+                      <img src="./images/blog-dog.jpg" alt="" class="" />
+                      <p>Puppy Basics: Feeding Tips for the First 6 Months</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6">
+                  <a href="#" class="reset-a">
+                    <div class="wrapper clearfix">
+                      <img src="./images/blog-dog.jpg" alt="" class="" />
+                      <p>Puppy Basics: Feeding Tips for the First 6 Months</p>
+                    </div>
+                  </a>
+                </div>
+
+                <div class="col-md-6">
+                  <a href="#" class="reset-a">
+                    <div class="wrapper clearfix">
+                      <img src="./images/blog-dog.jpg" alt="" class="" />
+                      <p>Puppy Basics: Feeding Tips for the First 6 Months</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social green-bg text-center">
+        <span>CONNECT WITH</span>
+        <a href="#"><img src="./images/fb-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/yt-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/insta-icon.png" alt=""/></a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="links clearfix">
+          <a href="#">Home</a>
+          <a href="#">Why IAMS?</a>
+          <a href="#">Products</a>
+          <a href="#">History</a>
+          <a href="#">Resources</a>
+          <a href="#">Money Back</a>
+          <a href="#">Store Locator</a>
+          <a href="#">Privacy</a>
+          <a href="#">Legal</a>
+        </div>
+        <div class="copy-right text-center white-color">
+          <p>
+            © 2020 Mars or Affiliates. US Patents Pending.<br />Other trademarks
+            are property of their respective owners.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="./scripts/bootstrap.select.js"></script>
+    <script src="./scripts/custom.js"></script>
+  </body>
+</html>

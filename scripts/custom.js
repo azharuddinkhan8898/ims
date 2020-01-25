@@ -36,38 +36,105 @@ $(function() {
     });
   }
 
-  $('.products-slider-single-wrapper').slick({
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    arrows: false,
-    fade: true,
-    asNavFor: '.products-slider-nav-wrapper'
-  });
-  $('.products-slider-nav-wrapper').slick({
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    asNavFor: '.products-slider-single-wrapper',
-    dots: true,
-    centerMode: true,
-    focusOnSelect: true
+  if ($(".products-slider-single-wrapper").length) {
+    $(".products-slider-single-wrapper").slick({
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      arrows: false,
+      fade: true,
+      asNavFor: ".products-slider-nav-wrapper"
+    });
+  }
+  if ($(".products-slider-nav-wrapper").length) {
+    $(".products-slider-nav-wrapper").slick({
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      asNavFor: ".products-slider-single-wrapper",
+      dots: true,
+      centerMode: true,
+      focusOnSelect: true
+    });
+  }
+
+  if ($("#slider-unique").length) {
+    $("#slider-unique").slick({
+      autoplaySpeed: 5000,
+      arrows: false,
+      dots: true,
+      fade: true
+    });
+  }
+
+  if ($(".testimonials-wrapper").length) {
+    $(".testimonials-wrapper").slick({
+      autoplaySpeed: 5000,
+      arrows: false,
+      dots: true
+    });
+  }
+  if ($(".b-slider").length) {
+    $(".b-slider").slick({
+      dots: false
+    });
+  }
+
+  $(".blogs-wrapper .body .filters-wrapper .filter > a").click(function() {
+    $(this)
+      .parent()
+      .toggleClass("active");
+    $(this)
+      .next()
+      .slideToggle(300);
   });
 
-  $("#slider-unique").slick({
-    autoplaySpeed: 5000,
-    arrows: false,
-    dots: true,
-    fade: true
-  });
+  $(
+    ".blogs-wrapper .body .filters-wrapper .filter.active > a + .filter-check-wrapper"
+  ).slideToggle(300);
 
-  $(".testimonials-wrapper").slick({
-    autoplaySpeed: 5000,
-    arrows: false,
-    dots: true
-  });
-  $(".b-slider").slick({
-    dots: false
-  });
-  //$(".fancybox").fancybox({})
+  if ($(".fancybox").length) {
+    $(".fancybox").fancybox({});
+  }
+
+  var filterTags = [];
+
+  $(".blogs-wrapper .body .filters-wrapper .filter > a + .filter-check-wrapper .filter-check input").change(function(){
+    filterTags = [];
+    $(".blogs-wrapper .body .filters-wrapper .filter > a + .filter-check-wrapper .filter-check input").each(function(i, el) {
+      if($(el).is(":checked")){
+        filterTags.push($(el).attr("name"))
+      }
+    })
+    updateFilter();
+  })
+
+  function updateFilter(){
+    if(filterTags.length > 0){
+      filterTags.forEach(function(el){
+        $(".blogs-list-wrapper > .row > div").each(function(i, ell){
+          var tags = $(ell).attr("data-tags").split(" ");
+          if(tags.indexOf(el) !== -1){
+            $(ell).show();
+          }
+          else{
+            $(ell).hide();
+          }
+          // tags.forEach(function(elll){
+          //   console.log(el===elll)
+          //   if(el == elll){
+          //     $(ell).show();
+          //   }
+          //   else{
+          //     $(ell).hide();
+          //   }
+          // })
+        })
+      })
+    }else{
+      $(".blogs-list-wrapper > .row > div").show();
+    }
+    
+  }
+
   $(".tab-action li").click(function() {
     var tabIndex = $(this).index();
     $(".tab-action li, .tab").removeClass("active");
