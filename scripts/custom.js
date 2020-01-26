@@ -1,9 +1,13 @@
 $(function() {
+  
   $("img").on("dragstart", function(event) {
     event.preventDefault();
   });
   $(window).on("load", function() {
     $("#loader").fadeOut();
+    setTimeout(function(){
+      AOS.init();
+    },500)
   });
   $("#main-nav a,.footer-nav li a,#free-sample-btn").on("click", function(
     event
