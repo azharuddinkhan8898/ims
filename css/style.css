@@ -1203,7 +1203,7 @@ header {
   text-decoration: underline;
 }
 
-.money-back-form .money-back-form-container #submit {
+.money-back-form .money-back-form-container .submit {
   background: #000;
   border: none;
   padding: 7px 15px;
