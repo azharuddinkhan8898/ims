@@ -503,6 +503,8 @@ li {
   border-radius: 32px;
   text-decoration: none !important;
   position: relative;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -569,7 +571,9 @@ li {
   position: absolute;
   border-right: 2px solid #009b3d;
   border-bottom: 2px solid #009b3d;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: absolute;
   top: 10px;
   width: 10px;
@@ -687,9 +691,12 @@ li {
   text-transform: uppercase;
   border: 1px solid #fff;
   border-radius: 7px 7px 0 0;
-  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
+          box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.8);
   border-bottom: none;
-  transform: rotate(-90deg) translateY(-50%);
+  -webkit-transform: rotate(-90deg) translateY(-50%);
+      -ms-transform: rotate(-90deg) translateY(-50%);
+          transform: rotate(-90deg) translateY(-50%);
   top: 50%;
   position: fixed;
   right: -74px;
@@ -710,7 +717,9 @@ li {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%);
+  -webkit-transform: translate(-50%);
+      -ms-transform: translate(-50%);
+          transform: translate(-50%);
 }
 
 .address-block {
@@ -826,7 +835,9 @@ header {
 .footer-nav li ul:after {
   bottom: -5px;
   top: unset;
-  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
   border-bottom-color: #fff;
 }
 
@@ -859,12 +870,16 @@ header {
 
 #navigation li .button.arrow:after,
 .button-arrow:after {
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 #navigation li .button.arrow:before,
 .button-arrow:before {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   right: 23px;
 }
 
@@ -897,9 +912,12 @@ header {
   padding: 20px 40px;
   top: -100px;
   border-radius: 14px;
-  box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
+  -webkit-box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.4);
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: 1px solid #009b3d;
 }
 
@@ -928,7 +946,9 @@ header {
 
 .form-btn {
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   background: #0b9b4c;
   color: #fff;
   text-transform: uppercase;
@@ -1073,7 +1093,9 @@ header {
   text-transform: unset;
   font-family: Gotham Rounded Medium;
   top: 50%;
-  transform: translateY(-80%);
+  -webkit-transform: translateY(-80%);
+      -ms-transform: translateY(-80%);
+          transform: translateY(-80%);
   margin-left: 40px;
 }
 
@@ -1156,13 +1178,30 @@ header {
   color: #fff;
   outline: none;
   border: 1px solid #6cb98a;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   padding: 10px 15px;
 }
 
 .money-back-form .money-back-form-container .form-group input,
 .money-back-form .money-back-form-container .form-group select {
   height: 40px;
+}
+
+.money-back-form .money-back-form-container .form-group input::-webkit-input-placeholder, .money-back-form .money-back-form-container .form-group textarea::-webkit-input-placeholder, .money-back-form .money-back-form-container .form-group select::-webkit-input-placeholder {
+  color: #6cb98a;
+}
+
+.money-back-form .money-back-form-container .form-group input::-moz-placeholder, .money-back-form .money-back-form-container .form-group textarea::-moz-placeholder, .money-back-form .money-back-form-container .form-group select::-moz-placeholder {
+  color: #6cb98a;
+}
+
+.money-back-form .money-back-form-container .form-group input:-ms-input-placeholder, .money-back-form .money-back-form-container .form-group textarea:-ms-input-placeholder, .money-back-form .money-back-form-container .form-group select:-ms-input-placeholder {
+  color: #6cb98a;
+}
+
+.money-back-form .money-back-form-container .form-group input::-ms-input-placeholder, .money-back-form .money-back-form-container .form-group textarea::-ms-input-placeholder, .money-back-form .money-back-form-container .form-group select::-ms-input-placeholder {
+  color: #6cb98a;
 }
 
 .money-back-form .money-back-form-container .form-group input::placeholder,
@@ -1175,7 +1214,9 @@ header {
   content: "";
   border-right: 2px solid #6cb98a;
   border-bottom: 2px solid #6cb98a;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   position: absolute;
   top: 43px;
   width: 10px;
@@ -1260,7 +1301,9 @@ footer .footer-wrapper .copy-right p {
   max-height: 100%;
   bottom: 0px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   max-width: 100%;
 }
 
@@ -1269,7 +1312,9 @@ footer .footer-wrapper .copy-right p {
   z-index: 1;
   text-align: center;
   left: 45%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-top: 20px;
 }
 
@@ -1346,7 +1391,9 @@ li.prod.active:after {
   position: absolute;
   right: -36px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 li.prod.yellow-color.active:after {
@@ -1375,9 +1422,16 @@ ul.prod-feature li {
   font-family: Gotham Rounded Light;
   position: relative;
   min-height: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 ul.prod-feature li strong {
@@ -1736,7 +1790,6 @@ div#ingredient-1 {
   min-width: 100%;
   z-index: 1035;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1811,7 +1864,6 @@ div#ingredient-1 {
   pointer-events: none;
   opacity: 0.9;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1907,7 +1959,6 @@ div#ingredient-1 {
   float: left;
   width: 100%;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -1919,7 +1970,6 @@ div#ingredient-1 {
   float: left;
   width: 100%;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
@@ -2033,7 +2083,9 @@ div#ingredient-1 {
   width: 30px;
   height: 30px;
   display: block;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 
 [dir="rtl"] .slick-prev:before {
@@ -2060,7 +2112,9 @@ li.slick-active button {
   width: 30px;
   height: 30px;
   display: block;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 [dir="rtl"] .slick-next:before {
@@ -2266,6 +2320,13 @@ li.slick-active button {
 
 .gray-up-curve {
   background: rgb(239, 239, 239);
+  background: -webkit-gradient(linear,
+      left bottom, left top,
+      from(rgba(255, 255, 255, 1)),
+      to(rgba(239, 239, 239, 1)));
+  background: -o-linear-gradient(bottom,
+      rgba(255, 255, 255, 1) 0%,
+      rgba(239, 239, 239, 1) 100%);
   background: linear-gradient(0deg,
       rgba(255, 255, 255, 1) 0%,
       rgba(239, 239, 239, 1) 100%);
@@ -2372,6 +2433,8 @@ li.slick-active button {
   font-size: 18px;
   border: 1px dotted #009b3d;
   text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
 
@@ -2395,6 +2458,8 @@ li.slick-active button {
   border-radius: 20px;
   margin: 10px 0px;
   display: inline-block;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
   text-decoration: none;
 }
@@ -2408,7 +2473,9 @@ li.slick-active button {
   margin-left: 15px;
   border-bottom: none;
   border-left: none;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
   position: relative;
   top: -2px;
 }
@@ -2419,7 +2486,9 @@ li.slick-active button {
 }
 
 .blogs-wrapper .body .filters-wrapper .filter.active>a::after {
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 4px;
 }
 
@@ -2474,7 +2543,9 @@ li.slick-active button {
   border-left: none;
   left: 4px;
   top: -1px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
   display: none;
 }
 
@@ -2597,7 +2668,8 @@ li.slick-active button {
   margin-left: -20px;
   top: 50%;
   margin-top: -35px;
-  box-shadow: inset 0 0 0 1px #fff;
+  -webkit-box-shadow: inset 0 0 0 1px #fff;
+          box-shadow: inset 0 0 0 1px #fff;
   border-radius: 25px;
 }
 
@@ -2657,13 +2729,19 @@ li.slick-active button {
   background: url("../images/IAMS-Dog-Home.jpg") no-repeat center center;
   background-size: cover;
   -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+  -ms-transform: scale(1.1);
+      transform: scale(1.1);
 }
 
 .home-banner-wrapper .content-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
 }
 
@@ -2687,33 +2765,69 @@ li.slick-active button {
 }
 
 #sample-btn:hover::after {
-  animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
+  -webkit-animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+          animation: shake 0.82s cubic-bezier(.36, .07, .19, .97) both;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+@-webkit-keyframes shake {
+
+  10%,
+  90% {
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
+  }
 }
 
 @keyframes shake {
 
   10%,
   90% {
-    transform: translate3d(-1px, 0, 0);
+    -webkit-transform: translate3d(-1px, 0, 0);
+            transform: translate3d(-1px, 0, 0);
   }
 
   20%,
   80% {
-    transform: translate3d(2px, 0, 0);
+    -webkit-transform: translate3d(2px, 0, 0);
+            transform: translate3d(2px, 0, 0);
   }
 
   30%,
   50%,
   70% {
-    transform: translate3d(-4px, 0, 0);
+    -webkit-transform: translate3d(-4px, 0, 0);
+            transform: translate3d(-4px, 0, 0);
   }
 
   40%,
   60% {
-    transform: translate3d(4px, 0, 0);
+    -webkit-transform: translate3d(4px, 0, 0);
+            transform: translate3d(4px, 0, 0);
   }
 }
 
@@ -2766,7 +2880,9 @@ li.slick-active button {
     right: unset;
     top: unset;
     bottom: -26px;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     left: 50%;
   }
 
@@ -2901,12 +3017,16 @@ li.slick-active button {
   }
 
   .menu-ico.active i:before {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
     top: 0;
   }
 
   .menu-ico.active i:after {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+        -ms-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     top: 0;
   }
 
@@ -2934,7 +3054,9 @@ li.slick-active button {
 
   #main-nav li:hover ul {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
     z-index: 100;
   }
 
@@ -2944,7 +3066,9 @@ li.slick-active button {
 
   ul.buy-dropdown {
     left: 50%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   ul.buy-dropdown:after {
@@ -3233,7 +3357,9 @@ li.slick-active button {
     font-size: 40px;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     margin: 0px;
     white-space: nowrap;
   }
@@ -3269,6 +3395,8 @@ li.slick-active button {
     font-size: 14px;
     border: 1px dotted #009b3d;
     text-transform: uppercase;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
   }
 
@@ -3294,6 +3422,8 @@ li.slick-active button {
     border-radius: 20px;
     margin: 10px 0px;
     display: inline-block;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition: all 0.3s ease;
     text-decoration: none;
     display: block;
@@ -3309,7 +3439,8 @@ li.slick-active button {
     position: absolute;
     z-index: 31;
     background: #fff;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
     width: 100%;
   }
 
