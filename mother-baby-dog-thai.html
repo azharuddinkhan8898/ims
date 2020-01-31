@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IAMS</title>
+  </head>
+
+  <body>
+    <div id="loader">
+      <div><img src="images/loader.gif" /></div>
+    </div>
+    <header>
+      <div class="container-fluid">
+        <div class="logo pull-left">
+          <a href="/"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <div id="navigation" class="pull-right">
+          <div class="menu-ico"><i></i></div>
+          <div id="main-nav">
+            <ul class="pull-left">
+              <li><a href="#banner">Home</a></li>
+              <li>
+                <a href="#why">Why IAMS<sup>TM</sup></a>
+              </li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#history-iams">History</a></li>
+              <li>
+                <a href="javascript:void(0)" class="button outline small buyNow"
+                  >Buy Now</a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="store-locator"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Store Locator');"
+                      ><img src="images/store-locator.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.in/s?i=pets&amp;bbn=4771342031&amp;rh=n%3A2454181031%2Cn%3A%214740420031%2Cn%3A4771342031%2Cn%3A4771395031%2Cp_89%3AIAMS&amp;dc&amp;hidden-keywords=B081VY4KCS%7CB081VXYRX9%7CB081VY96ZY%7CB081VXG85T%7CB0815L84C9%7CB0815L7WWQ%7CB0815L8XFN%7CB0815LD3NF%7CB0815LGC2T%7CB0815KXTY4%7CB0815LT44B%7CB0815LCJWG%7CB0815LTK2X%7CB0815LGB8V%7CB0815LF82M&amp;qid=1575523072&amp;rnid=4771342031&amp;ref=sr_nr_n_1/"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Amazon');"
+                      ><img src="images/amazon.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a
+              href="#banner"
+              class="button button-fill pull-right"
+              id="sample-btn"
+              onclick="ga('send','event','Top_Navigation','click','Grab your free sample');"
+              >Grab Your Sample</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <h1 class="banner-title">ผลิตภัณฑ์</h1>
+      <div id="main-slider">
+        <a href="javascript:void(0)" class="db"
+          ><img src="./images/products-banner.png" alt="" title="" width="100%"
+        /></a>
+        <a href="javascript:void(0)" class="mb"
+          ><img src="images/products-banner.png" alt="" title="" width="100%"
+        /></a>
+      </div>
+    </section>
+
+    <section class="products-header padding-top-bottom-100">
+      <div class="container">
+        <div
+          class="products-header-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <div class="row">
+            <div class="col-md-6">
+              <div class="wrapper">
+                <div class="products-slider-single-wrapper">
+                  <div class="products-slide-single-wrapper">
+                    <a href="./images/product3-main-1.png" class="fancybox">
+                      <img src="./images/product3-main-1.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="products-slide-single-wrapper">
+                    <a href="./images/product3-main-2.png" class="fancybox">
+                      <img src="./images/product3-main-2.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="products-slide-single-wrapper">
+                    <a href="./images/product3-main-3.png" class="fancybox">
+                      <img src="./images/product3-main-3.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider-nav-wrapper">
+                  <div class="products-slide-nav-wrapper">
+                    <img src="./images/product3-main-thumb-1.png" alt="" />
+                  </div>
+                  <div class="products-slide-nav-wrapper">
+                    <img src="./images/product3-main-thumb-2.png" alt="" />
+                  </div>
+                  <div class="products-slide-nav-wrapper">
+                    <img src="./images/product3-main-thumb-3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="wrapper product-details">
+                <h3>IAMS™ PROACTIVE HEALTH™ สำหรับแม่และลูกสุนัข</h3>
+                <p>
+                  สำหรับลูกสุนัข:<br />
+                  เพิ่มศักยภาพการฝึกฝนของลูกสุนัขของคุณด้วย DHA
+                  ที่จำเป็นสำหรับการพัฒนาสมองที่แข็งแกร่ง
+                  ทำให้ปีแรกของเขาเป็นปีมีความสุข<br /><br />
+                  สำหรับแม่สุนัข:<br />
+                  ช่วยในระยะตั้งครรภ์และการผลิตน้ำนมที่มีคุณภาพเพื่อการพัฒนาลูกสุนัขที่สมบูรณ์แข็งแรง
+                </p>
+                <p>&nbsp;</p>
+                <a href="javascript:void(0)" class="button button-green buyNow"
+                  >ซื้อตอนนี้</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-main-details gray-up-curve">
+      <div class="gray-up-curve-image">
+        <img src="images/gray-up-curve.jpg" style="width: 100%;" />
+      </div>
+      <div class="container">
+        <div class="product-main-details-wrapper padding-top-bottom-50">
+          <div
+            class="product-main-details-sec"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="wrapper">
+                  <h4>ภาพรวมของผลิตภัณฑ์</h4>
+                  <div class="product-overview-wrapper">
+                    <div class="product-overview-sec clearfix">
+                      <img src="./images/product3-overview1.png" alt="" />
+                      <p>
+                        โอเมก้า 3 ดีเอชเอสำหรับลูกสุนัขที่ต้องการฝึกฝนมากขึ้น
+                        และฉลาดขึ้น
+                      </p>
+                    </div>
+                    <div class="product-overview-sec clearfix">
+                      <img src="./images/product3-overview2.png" alt="" />
+                      <p>
+                        สูตรอุดมไปด้วยสารต้านอนุมูลอิสระ
+                      </p>
+                    </div>
+                    <div class="product-overview-sec clearfix">
+                      <img src="./images/product3-overview3.png" alt="" />
+                      <p>
+                        โปรตีนคุณภาพ แคลเซียม และฟอสฟอรัสจากเนื้อไก่
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="wrapper">
+                  <h4>ภาพรวมของผลิตภัณฑ์</h4>
+                  <p>
+                    ไก่และผลิตภัณฑ์จากไก่ ข้าวโพด ข้าวสาลี น้ำมันไก่
+                    ผลิตภัณฑ์ปรุงรส เนื้อบีท แร่ธาตุ น้ำมันปลา สารสกัดจากธัญพืช
+                    ยีสต์แห้ง โคลีนคลอไรด์ ฟรุกโตโอลิโกแซคคาไรด์ เมไทโอนีน
+                    สารกันบูด
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-main-details-sec margin-top-100 feeding-guide"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <h4>แนวทางการให้อาหาร</h4>
+
+            <table class="margin-bottom-50 no-width">
+              <thead>
+                <tr>
+                  <th>แม่สุนัข</th>
+                  <th>แนะนำการให้อาหาร</th>
+                  <th colspan="4">
+                    ในละวันของแต่ละช่วงในการตั้งครรภ์ (กรัม / วัน)
+                    ตามน้ำหนักแม่สุนัข
+                  </th>
+                </tr>
+              </thead>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>0-4 สัปดาห์</td>
+                <td>5-7 สัปดาห์</td>
+                <td>8-9 สัปดาห์</td>
+                <td>การให้นมบุตร</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">สายพันธุ์ทอย</td>
+                <td>1-3</td>
+                <td>28-64</td>
+                <td>42-96</td>
+                <td>49-111</td>
+                <td>67-173</td>
+              </tr>
+              <tr>
+                <td>3-5</td>
+                <td>64-94</td>
+                <td>96-141</td>
+                <td>111-163</td>
+                <td>173-272</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">สายพันธุ์เล็ก25-50</td>
+                <td>5-8</td>
+                <td>94-134</td>
+                <td>141-201</td>
+                <td>163-232</td>
+                <td>272-413</td>
+              </tr>
+              <tr>
+                <td>8-10</td>
+                <td>134-159</td>
+                <td>201-238</td>
+                <td>232-274</td>
+                <td>413-504</td>
+              </tr>
+              <tr>
+                <td rowspan="2">สายพันธุ์ขนาดกลาง</td>
+                <td>10-20</td>
+                <td>159-267</td>
+                <td>238-400</td>
+                <td>274-461</td>
+                <td>504-942</td>
+              </tr>
+              <tr>
+                <td>20-25</td>
+                <td>267-315</td>
+                <td>400-473</td>
+                <td>461-545</td>
+                <td>942-1154</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">สายพันธุ์ใหญ่</td>
+                <td>25-40</td>
+                <td>315-449</td>
+                <td>473-673</td>
+                <td>545-775</td>
+                <td>1154-1773</td>
+              </tr>
+              <tr>
+                <td>40-50</td>
+                <td>449-530</td>
+                <td>673-796</td>
+                <td>775-916</td>
+                <td>1773-2016</td>
+              </tr>
+            </table>
+
+            <table class="margin-bottom-50 no-width">
+              <thead>
+                <tr>
+                  <th>แนะนำให้</th>
+                  <th>ตามน้ำหนักเป้าหมายของลูกสุนัขและสุนัขโตเต็มวัย (kg)</th>
+                  <th colspan="5">
+                    ให้อาหารในแต่ละวัน (g/day)
+                  </th>
+                </tr>
+              </thead>
+              <tr>
+                <td></td>
+                <td></td>
+                <td>&lt;3 เดือน</td>
+                <td>3-6 เดือน</td>
+                <td>6-9 เดือน</td>
+                <td>9-12 เดือน</td>
+                <td>12-18 เดือน</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">สายพันธุ์ทอย</td>
+                <td>1-3</td>
+                <td>15-72</td>
+                <td>32-83</td>
+                <td>37-83</td>
+                <td rowspan="2" colspan="2">
+                  เปลี่ยนเป็น IAMS Proactive Health
+                </td>
+              </tr>
+              <tr>
+                <td>3-5</td>
+                <td>33-106</td>
+                <td>72-121</td>
+                <td>83-121</td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">สายพันธุ์เล็ก25-50</td>
+                <td>5-8</td>
+                <td>48-151</td>
+                <td>106-172</td>
+                <td>111-172</td>
+                <td>111-170</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>8-10</td>
+                <td>69-178</td>
+                <td>151-204</td>
+                <td>170-204</td>
+                <td>170-201</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">สายพันธุ์ขนาดกลาง</td>
+                <td>10-20</td>
+                <td>82-299</td>
+                <td>178-343</td>
+                <td>201-343</td>
+                <td>201-339</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>20-25</td>
+                <td>137-346</td>
+                <td>339-404</td>
+                <td>339-404</td>
+                <td>339-404</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td rowspan="2">สายพันธุ์ใหญ่</td>
+                <td>25-40</td>
+                <td>136-492</td>
+                <td>346-575</td>
+                <td>404-575</td>
+                <td>396-575</td>
+                <td>396-563</td>
+              </tr>
+              <tr>
+                <td>40-50</td>
+                <td>191-509</td>
+                <td>493-675</td>
+                <td>575-681</td>
+                <td>563-681</td>
+                <td>553-676</td>
+              </tr>
+            </table>
+
+            <!-- <table class="margin-bottom-50">
+              <thead>
+                <tr>
+                  <th>Weight of dog</th>
+                  <th>Amount Per Day</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>1 lb</td>
+                <td>1/8 - 1/6 c</td>
+              </tr>
+              <tr>
+                <td>3 lb</td>
+                <td>1/4 - 1/3 c</td>
+              </tr>
+              <tr>
+                <td>5 lb</td>
+                <td>1/2 c</td>
+              </tr>
+              <tr>
+                <td>10 lb</td>
+                <td>3/4 - 7/8 c</td>
+              </tr>
+              <tr>
+                <td>15 lb</td>
+                <td>1 - 11/8 c</td>
+              </tr>
+              <tr>
+                <td>20 lb</td>
+                <td>11/4 - 11/3 c</td>
+              </tr>
+            </table> -->
+
+            <p>
+              อาหารนี้มี 390 กิโลแคลอรี่ของพลังงานที่เผาผลาญได้ (ME) ต่อ 100
+              กรัม ควรใส่ใจว่าต้องมีน้ำสะอาดบริสุทธิ์สำหรับสุนัขของคุณตลอดเวลา
+            </p>
+          </div>
+
+          <div
+            class="product-main-details-sec margin-top-100 transition-diet"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <h4>จะปรับเปลี่ยนอาหารสุนัขของคุณให้ถูกวิธีได้อย่างไร</h4>
+            <div class="center">
+              <img
+                src="./images/transition-diet.jpg"
+                class="diet-flow"
+                alt=""
+              />
+            </div>
+            <p>
+              สิ่่งสำคัญคือต้องค่อย ๆ ปรับเปลี่ยนอาหาร
+              การเปลี่ยนอาหารอย่างรวดเร็วเกินไปอาจทำให้สุนัขอาเจียน ท้องเสีย
+              หรือมีก๊าซในกระเพาะมากเกินไป
+              เมื่อใดก็ตามที่คุณตัดสินใจที่จะเปลี่ยนอาหารของสุนัข
+              คุณควรเปลี่ยนเป็นอาหารใหม่ทีละน้อยเพื่อให้เวลาระบบของสุนัขได้ปรับตัวเข้ากับการเปลี่ยนแปลงใหม่
+              โดยปกติแล้ว ควรใช้เวลาในการเปลี่ยนแปลงนี้มากกว่า 7-10 วัน
+            </p>
+            <p>
+              **สิ่งนี่เป็นเพียงแนวทางและคุณสามารถเพิ่มเวลาในการเปลี่ยนอาหารหากสัตว์เลี้ยงของคุณมีรายละเอียดที่อ่อนไหว
+            </p>
+          </div>
+          <div
+            class="product-main-details-sec margin-top-100 guaranteed-analysis"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <h4>การวิเคราะที่รับรอง</h4>
+            <table>
+              <tr>
+                <td>โปรตีนรวม (ขั้นต่ำ)</td>
+                <td>29.0%</td>
+              </tr>
+              <tr>
+                <td>ไขมันรวม (ขั้นต่ำ)</td>
+                <td>29.0%</td>
+              </tr>
+              <tr>
+                <td>ไฟเบอร์รวม (สูงสุด)</td>
+                <td>5.0%</td>
+              </tr>
+              <tr>
+                <td>ความชื้นรวม (สูงสุด)</td>
+                <td>12.0%</td>
+              </tr>
+              <tr>
+                <td>DHA</td>
+                <td>0.13%</td>
+              </tr>
+            </table>
+
+            <p>โปรดเก็บชุดนี้ในที่แห้งและเย็นและห่างจากแสงแดด</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social green-bg text-center">
+        <span>CONNECT WITH</span>
+        <a href="#"><img src="./images/fb-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/yt-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/insta-icon.png" alt=""/></a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="links clearfix">
+          <a href="#">Home</a>
+          <a href="#">Why IAMS?</a>
+          <a href="#">Products</a>
+          <a href="#">History</a>
+          <a href="#">Resources</a>
+          <a href="#">Money Back</a>
+          <a href="#">Store Locator</a>
+          <a href="#">Privacy</a>
+          <a href="#">Legal</a>
+        </div>
+        <div class="copy-right text-center white-color">
+          <p>
+            © 2020 Mars or Affiliates. US Patents Pending.<br />Other trademarks
+            are property of their respective owners.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/bootstrap.select.js"></script>
+    <script src="./scripts/custom.js"></script>
+  </body>
+</html>

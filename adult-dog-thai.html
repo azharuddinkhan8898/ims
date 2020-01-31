@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IAMS</title>
+  </head>
+
+  <body>
+    <div id="loader">
+      <div><img src="images/loader.gif" /></div>
+    </div>
+    <header>
+      <div class="container-fluid">
+        <div class="logo pull-left">
+          <a href="/"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <div id="navigation" class="pull-right">
+          <div class="menu-ico"><i></i></div>
+          <div id="main-nav">
+            <ul class="pull-left">
+              <li><a href="#banner">Home</a></li>
+              <li>
+                <a href="#why">Why IAMS<sup>TM</sup></a>
+              </li>
+              <li><a href="#products">Products</a></li>
+              <li><a href="#history-iams">History</a></li>
+              <li>
+                <a href="javascript:void(0)" class="button outline small buyNow"
+                  >Buy Now</a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="store-locator"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Store Locator');"
+                      ><img src="images/store-locator.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.in/s?i=pets&amp;bbn=4771342031&amp;rh=n%3A2454181031%2Cn%3A%214740420031%2Cn%3A4771342031%2Cn%3A4771395031%2Cp_89%3AIAMS&amp;dc&amp;hidden-keywords=B081VY4KCS%7CB081VXYRX9%7CB081VY96ZY%7CB081VXG85T%7CB0815L84C9%7CB0815L7WWQ%7CB0815L8XFN%7CB0815LD3NF%7CB0815LGC2T%7CB0815KXTY4%7CB0815LT44B%7CB0815LCJWG%7CB0815LTK2X%7CB0815LGB8V%7CB0815LF82M&amp;qid=1575523072&amp;rnid=4771342031&amp;ref=sr_nr_n_1/"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Amazon');"
+                      ><img src="images/amazon.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <a
+              href="#banner"
+              class="button button-fill pull-right"
+              id="sample-btn"
+              onclick="ga('send','event','Top_Navigation','click','Grab your free sample');"
+              >Grab Your Sample</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <h1 class="banner-title">ผลิตภัณฑ์</h1>
+      <div id="main-slider">
+        <a href="javascript:void(0)" class="db"
+          ><img src="./images/products-banner.png" alt="" title="" width="100%"
+        /></a>
+        <a href="javascript:void(0)" class="mb"
+          ><img src="images/products-banner.png" alt="" title="" width="100%"
+        /></a>
+      </div>
+    </section>
+
+    <section class="products-header padding-top-bottom-100">
+      <div class="container">
+        <div
+          class="products-header-wrapper"
+          data-aos="fade-up"
+          data-aos-duration="500"
+        >
+          <div class="row">
+            <div class="col-md-6">
+              <div class="wrapper">
+                <div class="products-slider-single-wrapper">
+                  <div class="products-slide-single-wrapper">
+                    <a href="./images/product1-main-1.png" class="fancybox">
+                      <img src="./images/product1-main-1.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="products-slide-single-wrapper">
+                    <a href="./images/product1-main-2.png" class="fancybox">
+                      <img src="./images/product1-main-2.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="products-slide-single-wrapper">
+                    <a href="./images/product1-main-3.png" class="fancybox">
+                      <img src="./images/product1-main-3.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div class="products-slider-nav-wrapper">
+                  <div class="products-slide-nav-wrapper">
+                    <img src="./images/product1-main-thumb-1.png" alt="" />
+                  </div>
+                  <div class="products-slide-nav-wrapper">
+                    <img src="./images/product1-main-thumb-2.png" alt="" />
+                  </div>
+                  <div class="products-slide-nav-wrapper">
+                    <img src="./images/product1-main-thumb-3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="wrapper product-details">
+                <h3>
+                  IAMS™ PROACTIVE HEALTH™ อาหารสำหรับสุนัขโต
+                  (สำหรับทุกสายพันธุ์)
+                </h3>
+                <p>
+                  IAMS อาหารสำหรับสุนัขโต
+                  ดูแลสุนัขที่กระปรี้กระเปร่าของคุณด้วยสารอาหารที่จำเป็นพร้อมกับพรีไบโอติคส์เพื่อสุขภาพร่างกายที่แข็งแรงทั้งภายนอกและภายใน
+                </p>
+                <p>&nbsp;</p>
+                <a href="javascript:void(0)" class="button button-green buyNow"
+                  >ซื้อตอนนี้</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="product-main-details gray-up-curve">
+      <div class="gray-up-curve-image">
+        <img src="images/gray-up-curve.jpg" style="width: 100%;" />
+      </div>
+      <div class="container">
+        <div class="product-main-details-wrapper padding-top-bottom-50">
+          <div
+            class="product-main-details-sec"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <div class="row">
+              <div class="col-md-6">
+                <div class="wrapper">
+                  <h4>ภาพรวมของผลิตภัณฑ์</h4>
+                  <div class="product-overview-wrapper">
+                    <div class="product-overview-sec clearfix">
+                      <img src="./images/product1-overview1.png" alt="" />
+                      <p>
+                        อัตราส่วนที่สมดุลของโอเมก้า 3 และ โอเมก้า 6
+                        เพื่อสุขภาพที่ดีและขนที่เงางาม
+                      </p>
+                    </div>
+                    <div class="product-overview-sec clearfix">
+                      <img src="./images/product1-overview2.png" alt="" />
+                      <p>
+                        การผสมผสานของเส้นใยที่ดีต่อสุขภาพและพรีไบโอติกธรรมชาติของ
+                        FOS เพื่อสุขภาพการขับถ่ายที่ดี
+                      </p>
+                    </div>
+                    <div class="product-overview-sec clearfix">
+                      <img src="./images/product1-overview3.png" alt="" />
+                      <p>
+                        โปรตีนคุณภาพจากไก่เพื่อกล้ามเนื้อที่แข็งแรง
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="wrapper">
+                  <h4>ภาพรวมของผลิตภัณฑ์</h4>
+                  <p>
+                    ไก่และผลิตภัณฑ์จากไก่ ข้าวโพด ข้าวสาลี น้ำมันไก่
+                    ผลิตภัณฑ์ปรุงรส เนื้อบีท ข้าวบาร์เลย์ กลูเตนจากข้าวโพด
+                    แร่ธาตุ น้ำมันปลา สารสกัดจากธัญพืช ยีสต์แห้ง โคลีนคลอไรด์
+                    ฟรุกโตโอลิโกแซคคาไรด์ เมไทโอนีน สารกันบูด
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="product-main-details-sec margin-top-100 feeding-guide"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <h4>แนวทางการให้อาหาร</h4>
+            <table class="margin-bottom-50">
+              <thead>
+                <tr>
+                  <th>แนะนำให้</th>
+                  <th>ให้อาหารในแต่ละวัน (g) ตามน้ำหนักของสุนัข (kg)</th>
+                </tr>
+              </thead>
+              <tr>
+                <td>1-5</td>
+                <td>26-87</td>
+              </tr>
+              <tr>
+                <td>5-10</td>
+                <td>87-147</td>
+              </tr>
+              <tr>
+                <td>10-25</td>
+                <td>147-292</td>
+              </tr>
+              <tr>
+                <td>25-50</td>
+                <td>292-479</td>
+              </tr>
+            </table>
+
+            <p>
+              อาหารนี้มี 364 กิโลแคลอรี่ของพลังงานที่เผาผลาญได้ (ME) ต่อ 100
+              กรัม ควรใส่ใจว่าต้องมีน้ำสะอาดบริสุทธิ์สำหรับสุนัขของคุณตลอดเวลา
+            </p>
+          </div>
+
+          <div
+            class="product-main-details-sec margin-top-100 transition-diet"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <h4>จะปรับเปลี่ยนอาหารสุนัขของคุณให้ถูกวิธีได้อย่างไร</h4>
+            <div class="center">
+              <img
+                src="./images/transition-diet.jpg"
+                class="diet-flow"
+                alt=""
+              />
+            </div>
+            <p>
+              สิ่่งสำคัญคือต้องค่อย ๆ ปรับเปลี่ยนอาหาร
+              การเปลี่ยนอาหารอย่างรวดเร็วเกินไปอาจทำให้สุนัขอาเจียน ท้องเสีย
+              หรือมีก๊าซในกระเพาะมากเกินไป
+              เมื่อใดก็ตามที่คุณตัดสินใจที่จะเปลี่ยนอาหารของสุนัข
+              คุณควรเปลี่ยนเป็นอาหารใหม่ทีละน้อยเพื่อให้เวลาระบบของสุนัขได้ปรับตัวเข้ากับการเปลี่ยนแปลงใหม่
+              โดยปกติแล้ว ควรใช้เวลาในการเปลี่ยนแปลงนี้มากกว่า 7-10 วัน
+            </p>
+            <p>
+              **สิ่งนี่เป็นเพียงแนวทางและคุณสามารถเพิ่มเวลาในการเปลี่ยนอาหารหากสัตว์เลี้ยงของคุณมีรายละเอียดที่อ่อนไหว
+            </p>
+          </div>
+          <div
+            class="product-main-details-sec margin-top-100 guaranteed-analysis"
+            data-aos="fade-up"
+            data-aos-duration="500"
+          >
+            <h4>การวิเคราะที่รับรอง</h4>
+            <table>
+              <tr>
+                <td>โปรตีนรวม (ขั้นต่ำ)</td>
+                <td>25.0%</td>
+              </tr>
+              <tr>
+                <td>ไขมันรวม (ขั้นต่ำ)</td>
+                <td>14.0%</td>
+              </tr>
+              <tr>
+                <td>ไฟเบอร์รวม (สูงสุด)</td>
+                <td>5.0%</td>
+              </tr>
+              <tr>
+                <td>ความชื้นรวม (สูงสุด)</td>
+                <td>12.0%</td>
+              </tr>
+              <tr>
+                <td>โอเมก้า 6</td>
+                <td>2.0%</td>
+              </tr>
+              <tr>
+                <td>โอเมก้า 3</td>
+                <td>0.2%</td>
+              </tr>
+            </table>
+
+            <p>โปรดเก็บชุดนี้ในที่แห้งและเย็นและห่างจากแสงแดด</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="social green-bg text-center">
+        <span>CONNECT WITH</span>
+        <a href="#"><img src="./images/fb-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/yt-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/insta-icon.png" alt=""/></a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="links clearfix">
+          <a href="#">Home</a>
+          <a href="#">Why IAMS?</a>
+          <a href="#">Products</a>
+          <a href="#">History</a>
+          <a href="#">Resources</a>
+          <a href="#">Money Back</a>
+          <a href="#">Store Locator</a>
+          <a href="#">Privacy</a>
+          <a href="#">Legal</a>
+        </div>
+        <div class="copy-right text-center white-color">
+          <p>
+            © 2020 Mars or Affiliates. US Patents Pending.<br />Other trademarks
+            are property of their respective owners.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/bootstrap.select.js"></script>
+    <script src="./scripts/custom.js"></script>
+  </body>
+</html>
