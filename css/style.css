@@ -1074,20 +1074,22 @@ header {
   vertical-align: middle;
 }
 
-#slider-unique .slide .ico.ico-cat-1 {
-  background-image: url(../images/cat-feature-1.png);
+
+
+#slider-unique .slide .ico.ico-dog-1 {
+  background-image: url(../images/breed-feature-1.png);
 }
 
-#slider-unique .slide .ico.ico-cat-2 {
-  background-image: url(../images/cat-feature-2.png);
+#slider-unique .slide .ico.ico-dog-2 {
+  background-image: url(../images/breed-feature-2.png);
 }
 
-#slider-unique .slide .ico.ico-cat-3 {
-  background-image: url(../images/cat-feature-3.png);
+#slider-unique .slide .ico.ico-dog-3 {
+  background-image: url(../images/breed-feature-3.png);
 }
 
-#slider-unique .slide .ico.ico-cat-4 {
-  background-image: url(../images/cat-feature-4.png);
+#slider-unique .slide .ico.ico-dog-4 {
+  background-image: url(../images/breed-feature-4.png);
 }
 
 #slider-unique .slide .ico.ico-dog-5 {
@@ -1128,6 +1130,22 @@ header {
 
 #slider-unique .slide .ico.ico-dog-14 {
   background-image: url(../images/breed-feature-14.png);
+}
+
+#slider-unique .slide .ico.ico-cat-1 {
+  background-image: url(../images/cat-feature-1.png);
+}
+
+#slider-unique .slide .ico.ico-cat-2 {
+  background-image: url(../images/cat-feature-2.png);
+}
+
+#slider-unique .slide .ico.ico-cat-3 {
+  background-image: url(../images/cat-feature-3.png);
+}
+
+#slider-unique .slide .ico.ico-cat-4 {
+  background-image: url(../images/cat-feature-4.png);
 }
 
 #slider-unique .slide .slide-img {
