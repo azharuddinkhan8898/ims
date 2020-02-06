@@ -1074,8 +1074,6 @@ header {
   vertical-align: middle;
 }
 
-
-
 #slider-unique .slide .ico.ico-dog-1 {
   background-image: url(../images/breed-feature-1.png);
 }
@@ -1148,9 +1146,54 @@ header {
   background-image: url(../images/cat-feature-4.png);
 }
 
+#slider-unique .slide .ico.ico-cat-5 {
+  background-image: url(../images/cat-feature-5.png);
+}
+
+#slider-unique .slide .ico.ico-cat-6 {
+  background-image: url(../images/cat-feature-6.png);
+}
+
+#slider-unique .slide .ico.ico-cat-7 {
+  background-image: url(../images/cat-feature-7.png);
+}
+
+#slider-unique .slide .ico.ico-cat-8 {
+  background-image: url(../images/cat-feature-8.png);
+}
+
+#slider-unique .slide .ico.ico-cat-9 {
+  background-image: url(../images/cat-feature-9.png);
+}
+
+#slider-unique .slide .ico.ico-cat-10 {
+  background-image: url(../images/cat-feature-10.png);
+}
+
+#slider-unique .slide .ico.ico-cat-11 {
+  background-image: url(../images/cat-feature-11.png);
+}
+
+#slider-unique .slide .ico.ico-cat-12 {
+  background-image: url(../images/cat-feature-12.png);
+}
+
+#slider-unique .slide .ico.ico-cat-13 {
+  background-image: url(../images/cat-feature-13.png);
+}
+
+#slider-unique .slide .ico.ico-cat-14 {
+  background-image: url(../images/cat-feature-14.png);
+}
+
 #slider-unique .slide .slide-img {
   position: relative;
   margin-top: -100px;
+}
+
+.cat-wrapper #slider-unique .slide .slide-img {
+  position: relative;
+  margin-top: -140px;
 }
 
 #banner {
@@ -1372,6 +1415,10 @@ footer .social {
   padding: 10px 0px;
 }
 
+.cat-wrapper footer .social {
+  background-color: #e86000;
+}
+
 footer .social a {
   padding: 0px 5px;
 }
@@ -1410,6 +1457,7 @@ footer .footer-wrapper .copy-right p {
   width: 100%;
   position: relative;
   min-height: 400px;
+  overflow: hidden;
 }
 
 #home-selection .home-banner {
@@ -1423,15 +1471,20 @@ footer .footer-wrapper .copy-right p {
   max-width: 100%;
 }
 
+#home-selection .home-banner.mobile {
+  display: none;
+}
+
 #home-selection .content {
   position: absolute;
   z-index: 1;
   text-align: center;
-  left: 45%;
+  left: 50%;
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
   transform: translateX(-50%);
   margin-top: 20px;
+  display: none;
 }
 
 #home-selection .content img.logo {
@@ -1442,6 +1495,7 @@ footer .footer-wrapper .copy-right p {
 #home-selection .content h2 {
   font-size: 25px;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 #home-selection .content h2 span {
@@ -2398,7 +2452,7 @@ li.slick-active button {
 }
 
 .food-feature img {
-  height: 140px;
+  height: 96px;
 }
 
 .bottom-curve img {
@@ -3062,13 +3116,8 @@ li.slick-active button {
 }
 
 .cat-wrapper .home-banner-wrapper .bg {
-  background: var(--main-color) url("../images/cat-banner.png") no-repeat center
+  background:url("../images/IAMS-Cat-Home.jpg") no-repeat center
     center;
-  background-size: 26%;
-  background-position: 40% -60%;
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transform: scale(1.1);
 }
 
 .home-banner-wrapper .content-wrapper {
@@ -3884,5 +3933,40 @@ li.slick-active button {
     transform: none !important;
     text-align: center;
     flex-direction: column;
+  }
+  #home-selection .home-banner {
+    display: none;
+  }
+  #home-selection .home-banner.mobile {
+    display: block;
+    transform: translateX(-50%);
+    bottom: 0px;
+    width: 160%;
+    max-width: unset;
+  }
+  #home-selection .content {
+    display: block;
+    margin-top: 50px;
+  }
+  #home-selection .cat-btn,
+  #home-selection .dog-btn {
+    background: #ec723e;
+    color: #fff;
+    padding: 10px 20px;
+    position: absolute;
+    font-size: 20px;
+    border-radius: 15px;
+    text-decoration: none;
+    bottom: unset;
+    left: 10%;
+    top: 200px;
+    width: 80%;
+    text-align: center;
+  }
+  #home-selection .dog-btn {
+    background: #159942;
+    left: unset;
+    right: 10%;
+    top: 280px;
   }
 }
