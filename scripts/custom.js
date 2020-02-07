@@ -1,5 +1,7 @@
+
+
 $(function() {
-  
+  "use strict";
   $("img").on("dragstart", function(event) {
     event.preventDefault();
   });
@@ -187,7 +189,8 @@ $(function() {
     x = 0,
     y = 0,
     friction = 1 / 30;
-
+  var translate;
+  var translate1;
   function moveBackground() {
     x += (lFollowX - x) * friction;
     y += (lFollowY - y) * friction;
