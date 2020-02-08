@@ -221,4 +221,12 @@ $(function() {
   });
 
   moveBackground();
+
+  var demoTrigger = document.querySelector('.demo-trigger');
+  var paneContainer = document.querySelector('.product-details');
+
+  new Drift(demoTrigger, {
+    paneContainer: paneContainer,
+    inlinePane: false,
+  });
 });

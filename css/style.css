@@ -1051,6 +1051,7 @@ header {
   position: relative;
   color: var(--main-color);
   display: inline-block;
+  max-width: 60%;
 }
 
 .slide .heading:after {
@@ -1184,6 +1185,14 @@ header {
 
 #slider-unique .slide .ico.ico-cat-14 {
   background-image: url(../images/cat-feature-14.png);
+}
+
+#slider-unique .slide .ico.ico-cat-15 {
+  background-image: url(../images/cat-feature-15.png);
+}
+
+#slider-unique .slide .ico.ico-cat-16 {
+  background-image: url(../images/cat-feature-16.png);
 }
 
 #slider-unique .slide .slide-img {
@@ -1756,6 +1765,16 @@ div#ingredient-1 {
 
 #ingredient-2 {
   float: right;
+}
+
+.cat-wrapper #ingredient-2{
+  left: -30px;
+  top: 30px;
+}
+
+.cat-wrapper #ingredient-2 p {
+  bottom: -75px;
+  left: 34%;
 }
 
 #ingredient-1 p {
@@ -3589,7 +3608,7 @@ li.slick-active button {
   }
 
   .slide-img {
-    width: 130px;
+    width: 220px;
     padding-bottom: 30px;
   }
 
@@ -3918,7 +3937,7 @@ li.slick-active button {
   }
 
   #why .row > div {
-    min-height: 150px;
+    min-height: 200px;
   }
 
   #about-dogs {
@@ -3968,5 +3987,9 @@ li.slick-active button {
     left: unset;
     right: 10%;
     top: 280px;
+  }
+  .cat-wrapper .home-banner-wrapper .bg{
+    transform: none !important;
+    background-position: 37% 10%;
   }
 }
