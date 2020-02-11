@@ -114,9 +114,8 @@ strong {
 }
 
 h1 {
-  font-size: 4.5em;
+  font-size: 3em;
   text-transform: uppercase;
-  letter-spacing: -4px;
   color: var(--main-color);
 }
 
@@ -1768,7 +1767,7 @@ div#ingredient-1 {
   float: right;
 }
 
-.cat-wrapper #ingredient-2{
+.cat-wrapper #ingredient-2 {
   left: -30px;
   top: 30px;
 }
@@ -3121,13 +3120,17 @@ li.slick-active button {
   overflow: hidden;
 }
 
-.home-banner-wrapper .home-banner-slide{
+.home-banner-wrapper .home-banner-slide {
   height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.home-banner-slider-wrapper, .home-banner-slider-wrapper .slick-list, .home-banner-slider-wrapper .slick-list .slick-track, .home-banner-slider-wrapper .slick-list .slick-track .slick-slide, .home-banner-slider-wrapper .slick-list .slick-track .slick-slide> div{
+.home-banner-slider-wrapper,
+.home-banner-slider-wrapper .slick-list,
+.home-banner-slider-wrapper .slick-list .slick-track,
+.home-banner-slider-wrapper .slick-list .slick-track .slick-slide,
+.home-banner-slider-wrapper .slick-list .slick-track .slick-slide > div {
   height: 100%;
 }
 
@@ -3145,30 +3148,29 @@ li.slick-active button {
   transform: scale(1.1);
 }
 
-
-
-.home-banner-slider-wrapper .slick-prev, .home-banner-slider-wrapper .slick-next{
+.home-banner-slider-wrapper .slick-prev,
+.home-banner-slider-wrapper .slick-next {
   border-color: #fff;
   top: 75%;
 }
 
-.home-banner-slider-wrapper .slick-prev:before, .home-banner-slider-wrapper .slick-next:before{
-  border-color:#fff;
+.home-banner-slider-wrapper .slick-prev:before,
+.home-banner-slider-wrapper .slick-next:before {
+  border-color: #fff;
 }
 
-.home-banner-slider-wrapper .slick-prev{
+.home-banner-slider-wrapper .slick-prev {
   right: 60px;
   z-index: 1;
   left: unset;
 }
 
-.home-banner-slider-wrapper .slick-next{
+.home-banner-slider-wrapper .slick-next {
   right: 30px;
 }
 
 .cat-wrapper .home-banner-wrapper .bg {
-  background:url("../images/IAMS-Cat-Home.jpg") no-repeat center
-    center;
+  background: url("../images/IAMS-Cat-Home.jpg") no-repeat center center;
 }
 
 .home-banner-wrapper .content-wrapper {
@@ -3188,10 +3190,9 @@ li.slick-active button {
   font-size: 2.5em;
   line-height: 90%;
   text-align: center;
-
 }
 
-.home-banner-wrapper .content-wrapper .buyNow{
+.home-banner-wrapper .content-wrapper .buyNow {
   margin-top: 20px;
   display: inline-block;
   padding: 7px 20px;
@@ -3295,6 +3296,69 @@ li.slick-active button {
 .white-rev-curve {
   position: absolute;
   bottom: -5px;
+}
+
+.dog-uniqueness .row > div > .wrapper {
+  text-align: center;
+  padding: 0px 30px;
+}
+
+.dog-uniqueness .row > div > .wrapper h4 {
+  font-size: 16px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+.dog-uniqueness .row > div > .wrapper p {
+  margin: 0px;
+  color: #9c9c9c;
+  font-family: var(--medium-font);
+}
+
+.iams-goodness{
+  margin: 100px 0px;
+}
+
+.iams-goodness .iams-goodness-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.iams-goodness .iams-goodness-wrapper > div {
+  width: 50%;
+  text-align: center;
+  padding: 0px 20px;
+}
+
+.iams-goodness .iams-goodness-wrapper > div h2 {
+  font-size: 2.5em;
+  text-align: center;
+}
+
+.iams-goodness .iams-goodness-wrapper > div a.button{
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.iams-goodness .iams-goodness-wrapper > div .image-wrapper {
+  display: inline-block;
+}
+.iams-goodness .iams-goodness-wrapper > div .image-wrapper .big-paw-bg{
+  position: absolute;
+  right: -100px;
+  top: -64px;
+  z-index: -1;
+}
+
+.learn-more-about-pets .learn-more-about-pets-slide .learn-more-about-pets-slide-wrapper{
+  padding: 0px 30px;
+  text-align: center;
+}
+
+.learn-more-about-pets .learn-more-about-pets-slide .learn-more-about-pets-slide-wrapper img{
+  border: 2px solid #bababa;
+  border-radius: 50%;
+  padding: 3px;
 }
 
 /* Responsive */
@@ -4028,7 +4092,7 @@ li.slick-active button {
     right: 10%;
     top: 280px;
   }
-  .cat-wrapper .home-banner-wrapper .bg{
+  .cat-wrapper .home-banner-wrapper .bg {
     transform: none !important;
     background-position: 37% 10%;
   }

@@ -1,5 +1,3 @@
-
-
 $(function() {
   "use strict";
   $("img").on("dragstart", function(event) {
@@ -7,9 +5,9 @@ $(function() {
   });
   $(window).on("load", function() {
     $("#loader").fadeOut();
-    setTimeout(function(){
+    setTimeout(function() {
       AOS.init();
-    },500)
+    }, 500);
   });
   $("#main-nav a,.footer-nav li a,#free-sample-btn").on("click", function(
     event
@@ -72,8 +70,8 @@ $(function() {
   }
 
   $(".home-banner-slider-wrapper").slick({
-    infinite:false
-  })
+    infinite: false
+  });
 
   if ($(".testimonials-wrapper").length) {
     $(".testimonials-wrapper").slick({
@@ -82,6 +80,11 @@ $(function() {
       dots: true
     });
   }
+
+  $(".learn-more-about-pets-slider").slick({
+    slidesToShow: 4,
+    slidesToScroll: 1
+  });
   if ($(".b-slider").length) {
     $(".b-slider").slick({
       dots: false
@@ -107,25 +110,30 @@ $(function() {
 
   var filterTags = [];
 
-  $(".blogs-wrapper .body .filters-wrapper .filter > a + .filter-check-wrapper .filter-check input").change(function(){
+  $(
+    ".blogs-wrapper .body .filters-wrapper .filter > a + .filter-check-wrapper .filter-check input"
+  ).change(function() {
     filterTags = [];
-    $(".blogs-wrapper .body .filters-wrapper .filter > a + .filter-check-wrapper .filter-check input").each(function(i, el) {
-      if($(el).is(":checked")){
-        filterTags.push($(el).attr("name"))
+    $(
+      ".blogs-wrapper .body .filters-wrapper .filter > a + .filter-check-wrapper .filter-check input"
+    ).each(function(i, el) {
+      if ($(el).is(":checked")) {
+        filterTags.push($(el).attr("name"));
       }
-    })
+    });
     updateFilter();
-  })
+  });
 
-  function updateFilter(){
-    if(filterTags.length > 0){
-      filterTags.forEach(function(el){
-        $(".blogs-list-wrapper > .row > div").each(function(i, ell){
-          var tags = $(ell).attr("data-tags").split(" ");
-          if(tags.indexOf(el) !== -1){
+  function updateFilter() {
+    if (filterTags.length > 0) {
+      filterTags.forEach(function(el) {
+        $(".blogs-list-wrapper > .row > div").each(function(i, ell) {
+          var tags = $(ell)
+            .attr("data-tags")
+            .split(" ");
+          if (tags.indexOf(el) !== -1) {
             $(ell).show();
-          }
-          else{
+          } else {
             $(ell).hide();
           }
           // tags.forEach(function(elll){
@@ -137,12 +145,11 @@ $(function() {
           //     $(ell).hide();
           //   }
           // })
-        })
-      })
-    }else{
+        });
+      });
+    } else {
       $(".blogs-list-wrapper > .row > div").show();
     }
-    
   }
 
   $(".tab-action li").click(function() {
@@ -198,36 +205,40 @@ $(function() {
   function moveBackground() {
     x += (lFollowX - x) * friction;
     y += (lFollowY - y) * friction;
-    
-    translate = 'translate(' + x + 'px, ' + y + 'px) scale(1.1)';
-    translate1 = 'translate(' + -x + 'px, ' + -y + 'px) scale(1.1)';
-    $('.home-banner-wrapper .bg').css({
-      '-webit-transform': translate,
-      '-moz-transform': translate,
-      'transform': translate
+
+    translate = "translate(" + x + "px, " + y + "px) scale(1.1)";
+    translate1 = "translate(" + -x + "px, " + -y + "px) scale(1.1)";
+    $(".home-banner-wrapper .bg").css({
+      "-webit-transform": translate,
+      "-moz-transform": translate,
+      transform: translate
     });
-    $('.home-banner-wrapper .content-wrapper').css({
-      '-webit-transform': translate1,
-      '-moz-transform': translate1,
-      'transform': translate1
+    $(".home-banner-wrapper .content-wrapper").css({
+      "-webit-transform": translate1,
+      "-moz-transform": translate1,
+      transform: translate1
     });
 
     window.requestAnimationFrame(moveBackground);
   }
 
-  $(window).on('mousemove click', function(e) {
-
-    var lMouseX = Math.max(-100, Math.min(100, $(window).width() / 2 - e.clientX));
-    var lMouseY = Math.max(-100, Math.min(100, $(window).height() / 2 - e.clientY));
+  $(window).on("mousemove click", function(e) {
+    var lMouseX = Math.max(
+      -100,
+      Math.min(100, $(window).width() / 2 - e.clientX)
+    );
+    var lMouseY = Math.max(
+      -100,
+      Math.min(100, $(window).height() / 2 - e.clientY)
+    );
     lFollowX = (20 * lMouseX) / 100; // 100 : 12 = lMouxeX : lFollow
     lFollowY = (10 * lMouseY) / 100;
-
   });
 
   moveBackground();
 
-  var demoTrigger = document.querySelector('.demo-trigger');
-  var paneContainer = document.querySelector('.product-details');
+  var demoTrigger = document.querySelector(".demo-trigger");
+  var paneContainer = document.querySelector(".product-details");
 
   // new Drift(demoTrigger, {
   //   paneContainer: paneContainer,
