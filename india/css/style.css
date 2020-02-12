@@ -3298,24 +3298,28 @@ li.slick-active button {
   bottom: -5px;
 }
 
-.dog-uniqueness .row > div > .wrapper {
+.dog-uniqueness .row > div .wrapper {
   text-align: center;
   padding: 0px 30px;
 }
 
-.dog-uniqueness .row > div > .wrapper h4 {
+.dog-uniqueness .row > div .wrapper h4 {
   font-size: 16px;
   margin-top: 20px;
   margin-bottom: 5px;
 }
 
-.dog-uniqueness .row > div > .wrapper p {
+.dog-uniqueness .row > div .wrapper img {
+  margin: 0 auto;
+}
+
+.dog-uniqueness .row > div .wrapper p {
   margin: 0px;
   color: #9c9c9c;
   font-family: var(--medium-font);
 }
 
-.iams-goodness{
+.iams-goodness {
   margin: 100px 0px;
 }
 
@@ -3335,7 +3339,7 @@ li.slick-active button {
   text-align: center;
 }
 
-.iams-goodness .iams-goodness-wrapper > div a.button{
+.iams-goodness .iams-goodness-wrapper > div a.button {
   display: inline-block;
   margin-top: 20px;
 }
@@ -3343,22 +3347,76 @@ li.slick-active button {
 .iams-goodness .iams-goodness-wrapper > div .image-wrapper {
   display: inline-block;
 }
-.iams-goodness .iams-goodness-wrapper > div .image-wrapper .big-paw-bg{
+.iams-goodness .iams-goodness-wrapper > div .big-paw-bg {
   position: absolute;
   right: -100px;
   top: -64px;
   z-index: -1;
 }
 
-.learn-more-about-pets .learn-more-about-pets-slide .learn-more-about-pets-slide-wrapper{
+.learn-more-about-pets .learn-more-about-pets-slider {
+  margin-top: 50px;
+}
+
+.learn-more-about-pets
+  .learn-more-about-pets-slide
+  .learn-more-about-pets-slide-wrapper {
   padding: 0px 30px;
   text-align: center;
 }
 
-.learn-more-about-pets .learn-more-about-pets-slide .learn-more-about-pets-slide-wrapper img{
+.learn-more-about-pets
+  .learn-more-about-pets-slide
+  .learn-more-about-pets-slide-wrapper
+  img {
   border: 2px solid #bababa;
   border-radius: 50%;
   padding: 3px;
+  margin: 0 auto;
+}
+
+.learn-more-about-pets
+  .learn-more-about-pets-slide
+  .learn-more-about-pets-slide-wrapper
+  p {
+  font-size: 18px;
+}
+.learn-more-about-pets .slick-prev,
+.learn-more-about-pets .slick-next {
+  background: url(../images/learn-more-arrow.png);
+  width: 28px;
+  height: 35px;
+  top: 43%;
+}
+
+.learn-more-about-pets .slick-prev {
+  transform: rotateZ(180deg);
+  left: -10px;
+  transform-origin: center;
+}
+
+.learn-more-about-pets .slick-next {
+  transform: rotateZ(10deg);
+  right: -10px;
+  transform-origin: center;
+}
+
+.learn-more-about-pets .slick-prev:before,
+.learn-more-about-pets .slick-next::before {
+  content: none;
+}
+
+.home-food-selector .big-paw-bg {
+  opacity: 0.2;
+  right: unset;
+  left: 30%;
+  top: -80px;
+}
+
+.home-food-selector .iams-goodness-wrapper > div h2 span {
+  display: block;
+  color: var(--main-color);
+  font-size: 1.3em;
 }
 
 /* Responsive */
@@ -4095,5 +4153,29 @@ li.slick-active button {
   .cat-wrapper .home-banner-wrapper .bg {
     transform: none !important;
     background-position: 37% 10%;
+  }
+  .iams-goodness .iams-goodness-wrapper {
+    flex-direction: column;
+  }
+  .iams-goodness .iams-goodness-wrapper > div {
+    width: 100%;
+  }
+  .iams-goodness .iams-goodness-wrapper > div.text-side {
+    margin-top: 50px;
+  }
+  .iams-goodness .iams-goodness-wrapper > div .big-paw-bg {
+    right: -20px;
+    top: -84px;
+    z-index: -1;
+    width: 150px;
+  }
+  .home-food-selector .iams-goodness-wrapper {
+    flex-direction: column-reverse;
+  }
+  .home-food-selector {
+    margin-top: 50px;
+  }
+  .home-banner-slider-wrapper .slick-prev, .home-banner-slider-wrapper .slick-next{
+    top: 85%;
   }
 }
