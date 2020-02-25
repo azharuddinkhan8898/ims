@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IAMS</title>
+  </head>
+
+  <body>
+    <div id="loader">
+      <div><img src="images/loader.gif" /></div>
+    </div>
+    <header>
+      <div class="container-fluid">
+        <div class="logo pull-left">
+          <a href="/"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <div id="navigation" class="pull-right">
+          <div class="menu-ico"><i></i></div>
+          <div id="main-nav">
+            <ul class="pull-left">
+              <li><a href="#">Why IAMS?</a></li>
+              <li>
+                <a href="#">Our Products</a>
+              </li>
+              <li><a href="#">Free Sample</a></li>
+              <li><a href="#">Food Selector</a></li>
+              <li><a href="#">Find The Perfect Petmate</a></li>
+              <li><a href="#">Articles</a></li>
+              <!-- <li><a href="#">Resources</a></li> -->
+              <li>
+                <a href="javascript:void(0)" class="button outline small buyNow"
+                  >Buy Now</a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="store-locator"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Store Locator');"
+                      ><img src="images/store-locator.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.in/s?i=pets&amp;bbn=4771342031&amp;rh=n%3A2454181031%2Cn%3A%214740420031%2Cn%3A4771342031%2Cn%3A4771395031%2Cp_89%3AIAMS&amp;dc&amp;hidden-keywords=B081VY4KCS%7CB081VXYRX9%7CB081VY96ZY%7CB081VXG85T%7CB0815L84C9%7CB0815L7WWQ%7CB0815L8XFN%7CB0815LD3NF%7CB0815LGC2T%7CB0815KXTY4%7CB0815LT44B%7CB0815LCJWG%7CB0815LTK2X%7CB0815LGB8V%7CB0815LF82M&amp;qid=1575523072&amp;rnid=4771342031&amp;ref=sr_nr_n_1/"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Amazon');"
+                      ><img src="images/amazon.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <h1 class="banner-title">Store Locator</h1>
+      <div id="main-slider">
+        <a href="javascript:void(0)" class="db"
+          ><img src="images/free-sample-banner.png" alt="" title="" width="100%"
+        /></a>
+        <a href="javascript:void(0)" class="mb"
+          ><img src="images/free-sample-banner.png" alt="" title="" width="100%"
+        /></a>
+      </div>
+    </section>
+    <section class="store-locator">
+      <div class="container">
+        <div class="store-locator-wrapper">
+          <div class="form-container padTB50">
+            <div id="UpdatePanelDealerLocator">
+              <div
+                class="form"
+                id="details"
+                style="max-width: 700px;margin:0 auto"
+              >
+                <h4>
+                  Choose any of the options below<br />
+                  to find a store near you
+                </h4>
+                <div class="row">
+                  <div class="col-sm-8">
+                    <div class="select-style">
+                      <select
+                        name="ddlStateDealerLocator"
+                        id="ddlStateDealerLocator"
+                      >
+                        <option selected="selected" value="0"
+                          >Select State</option
+                        >
+                        <option value="Chandigarh">Chandigarh</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Haryana">Haryana</option>
+                        <option value="Karnataka">Karnataka</option>
+                        <option value="Maharashtra">Maharashtra</option>
+                        <option value="Punjab">Punjab</option>
+                        <option value="Tamil Nadu">Tamil Nadu</option>
+                        <option value="Telangana">Telangana</option>
+                        <option value="Uttar Pradesh">Uttar Pradesh</option>
+                        <option value="West bengal">West bengal</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="select-style">
+                      <select
+                        name="ddlCityDealerLocator"
+                        id="ddlCityDealerLocator"
+                      >
+                        <option selected="selected" value="0"
+                          >Select City</option
+                        >
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="row clearfix">
+                  <div class="col-sm-5 padTB25 col-md-5">
+                    <div class="scroller" style="height:400px">
+                      <div class="address-block">
+                        <p><strong>A Pet Shop</strong></p>
+                        <p>
+                          Shop No. 72, Jeevanahalli Main Rd, Opp.Shanti School,
+                          Jaibharath Nagar, Sanjeevappa Layout, Maruthi
+                          Sevanagar, Bengaluru, Bangalore, Karnataka 560033,<br />
+                          Mobile: 8971760011
+                        </p>
+                      </div>
+                      <div class="address-block">
+                        <p><strong>ADITYA PET SHOP</strong></p>
+                        <p>
+                          No 3787,Sri Marula Siddeshwara Mansion, Opposite Food
+                          World, 13Th Cross, Banashankari 2Nd Stage, Bangalore -
+                          560070, Karnataka,<br />
+                          Mobile: 9448735658
+                        </p>
+                      </div>
+                      <div class="address-block">
+                        <p><strong>AJAY VET PHARMA</strong></p>
+                        <p>
+                          Opp. J.P. Palace White Field, Sarjapur Road, Vinayaka
+                          Nagar, Gunjur, Bangalore, Karnataka,<br />
+                          Mobile: 9880633361
+                        </p>
+                      </div>
+                      <div class="address-block">
+                        <p><strong>ASHA PET CLINIC</strong></p>
+                        <p>
+                          #74/1, 13Th Cross,Cauvery Layout,Byrasandra Main
+                          Road,G.M.Palya, Bangalore - 560075 Karnataka,
+                          India,<br />
+                          Mobile: 9036870494
+                        </p>
+                      </div>
+                      <div class="address-block">
+                        <p><strong>BANGALORE PET HOSPITAL</strong></p>
+                        <p>
+                          #5, Tubarhalli, Varthur - Airport Main Road,
+                          Bangalore, Karnataka - 560066,<br />
+                          Mobile: 9972096168
+                        </p>
+                      </div>
+                      <div class="address-block">
+                        <p><strong>BEL Petzone</strong></p>
+                        <p>
+                          NO 46,GANGA COMPLEX,RMV 2ND STAGE,NEW BEL
+                          ROAD,BANAGALORE - 560054, Bangalore, Karnataka,<br />
+                          Mobile: 9945687441
+                        </p>
+                      </div>
+                      <div class="address-block">
+                        <p><strong>BOZO WAGS LLP</strong></p>
+                        <p>
+                          Shop No. 1 And 102, Site No. 73, Bbmp Municipal No.
+                          2228/220/73, Sri Ganapathi Complex, Yelenahalli
+                          Village, Akshayanagar, Bengaluru - 560068, Bangalore,
+                          Karnataka,<br />
+                          Mobile: 9036660660
+                        </p>
+                      </div>
+                      <div class="address-block">
+                        <p><strong>BRIGADE PET CARE</strong></p>
+                        <p>
+                          #62/A,3rd Main ,3rd Cross,Gurav Nagar,JP Nagar 7th
+                          Phase,Near BBMP Office,Bangalore 560078, Karnataka,<br />
+                          Mobile: 9743015212
+                        </p>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social green-bg text-center">
+        <span>CONNECT WITH</span>
+        <a href="#"><img src="./images/fb-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/yt-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/insta-icon.png" alt=""/></a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="links clearfix">
+          <a href="#">Home</a>
+          <a href="#">Why IAMS?</a>
+          <a href="#">Products</a>
+          <a href="#">History</a>
+          <a href="#">Resources</a>
+          <a href="#">Money Back</a>
+          <a href="#">Store Locator</a>
+          <a href="#">Privacy</a>
+          <a href="#">Legal</a>
+        </div>
+        <div class="copy-right text-center white-color">
+          <p>
+            © 2020 Mars or Affiliates. US Patents Pending.<br />Other trademarks
+            are property of their respective owners.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jScrollPane/2.2.1/script/jquery.jscrollpane.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/bootstrap.select.js"></script>
+    <script src="./scripts/custom.js"></script>
+  </body>
+</html>

@@ -974,6 +974,21 @@ header {
   border: 1px solid var(--main-color);
 }
 
+.free-sample .form-container{
+  left: 0px;
+  border: none;
+  box-shadow: none;
+  /* transform: none; */
+  width: 100%;
+  /* position: unset; */
+  /* max-width: unset; */
+  transform: none;
+  top: 0px;
+  margin: 0 auto;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
 .form-container h4 {
   color: var(--main-color);
 }
@@ -989,6 +1004,12 @@ header {
   -webkit-appearance: none;
   margin-bottom: 15px;
   font-size: 0.85em;
+  outline: none;
+}
+
+.free-sample .form-container .form input[type="text"],
+.free-sample .form-container .form select{
+  margin-bottom: 30px;
 }
 
 .form .checkbox-container {
@@ -2671,6 +2692,58 @@ li.slick-active button {
   font-size: 1.5em;
   margin-bottom: 40px;
 }
+.product-main-details .product-main-details-sec .nut-info{
+  display: flex;
+}
+
+.product-main-details .product-main-details-sec .nut-info .nut-info-wrapper{
+  height: 110px;
+  width: 110px;
+  border: 3px solid #f3b01c;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #f3b01c;
+  margin-right: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.product-main-details .product-main-details-sec .nut-info .nut-info-wrapper::before{
+  content: "";
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-top: 15px solid #f3b01c;
+  border-bottom: 15px solid transparent;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: -30px;
+}
+
+.product-main-details .product-main-details-sec .nut-info .nut-info-wrapper::after{
+  content: "";
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
+  border-top: 15px solid #f0f0f0;
+  border-bottom: 15px solid transparent;
+  height: 0px;
+  width: 0px;
+  position: absolute;
+  bottom: -25px;
+}
+
+.product-main-details .product-main-details-sec .nut-info .nut-info-wrapper span {
+  display: block;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: -1px;
+}
+.product-main-details .product-main-details-sec .nut-info .nut-info-wrapper span span{
+  font-size: 18px;
+}
 
 .product-main-details .product-main-details-sec .product-overview-wrapper img {
   float: left;
@@ -2819,6 +2892,23 @@ li.slick-active button {
 .blogs-wrapper .body .filters-wrapper .filter.active > a {
   color: #0c9b4c;
   background: #eaeaea;
+}
+
+.store-locator .form-container{
+  position: unset;
+  transform: unset;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
+
+
+.store-locator .form-container h4{
+  text-align: center;
+}
+
+.store-locator .address-block{
+  margin: 10px 10px 10px 0;
 }
 
 .blogs-wrapper .body .filters-wrapper .filter.active > a::after {
