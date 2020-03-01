@@ -3560,6 +3560,23 @@ li.slick-active button {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
+.store-locator .form-container{
+  position: unset;
+  transform: unset;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none;
+}
+
+
+.store-locator .form-container h4{
+  text-align: center;
+}
+
+.store-locator .address-block{
+  margin: 10px 10px 10px 0;
+}
+
 /* Responsive */
 @media screen and (min-width: 980px) {
   .menu-ico {
@@ -4294,5 +4311,13 @@ li.slick-active button {
   .cat-wrapper .home-banner-wrapper .bg{
     transform: none !important;
     background-position: 37% 10%;
+  }
+  .store-locator-wrapper .form-container{
+    padding: 0px;
+    max-width: 90%;
+    width: unset;
+  }
+  #UpdatePanelDealerLocator .scroller{
+    height: 200px !important;
   }
 }

@@ -291,4 +291,17 @@ $(function() {
 			hoverBoundingBox: true
     });
   }
+  if($('.scroller').length){
+    $('.scroller').jScrollPane({
+      contentWidth: '0px'
+    });
+  }
+  var map;
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      center: {lat: -34.397, lng: 150.644},
+      zoom: 8
+    });
+  }
+  initMap();
 });
