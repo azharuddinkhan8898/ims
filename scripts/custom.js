@@ -296,12 +296,126 @@ $(function() {
       contentWidth: '0px'
     });
   }
-  var map;
-  function initMap() {
-    map = new google.maps.Map(document.getElementById('map'), {
-      center: {lat: -34.397, lng: 150.644},
-      zoom: 8
+  if($("#map").length){
+    var map;
+    function initMap() {
+      map = new google.maps.Map(document.getElementById('map'), {
+        center: {lat: -34.397, lng: 150.644},
+        zoom: 8
+      });
+    }
+    initMap();
+  }
+  
+  var foodSelectorData = {
+    petName: "",
+    petAge: "",
+    petWeight: ""
+  };
+
+  if ($(".questions-wrapper").length) {
+    var questionsWrapper = $(".questions-wrapper").slick({
+      adaptiveHeight: true,
+      prevArrow: $(".prev"),
+      nextArrow: $(".next"),
+      infinite: false,
+      swipe: false
+    });
+    $(".pet-name-wrapper input").keyup(function() {
+      foodSelectorData.petName = $(".pet-name-wrapper input").val();
+      if (foodSelectorData.petName) {
+        $(".questions-container button.next").removeClass("disabled");
+      } else {
+        $(".questions-container button.next").addClass("disabled");
+      }
+      $(".pet-name").text(foodSelectorData.petName);
+    });
+    $(
+      ".food-selector-wrapper .questions-container .question-wrapper.question2 .options-wrapper .option"
+    ).click(function() {
+      $(this)
+        .parent()
+        .find(".option")
+        .removeClass("active");
+      $(".selected-options").show();
+      $(this).addClass("active");
+      $(".questions-container button.next").removeClass("disabled");
+      foodSelectorData.petAge = $(this).attr("data-value");
+      console.log(foodSelectorData);
+      $(".selected-options .selected").text(
+        (foodSelectorData.petAge ? foodSelectorData.petAge + ", " : "") +
+          (foodSelectorData.petWeight ? foodSelectorData.petWeight : "")
+      );
+    });
+    $(
+      ".food-selector-wrapper .questions-container .question-wrapper.question3 .options-wrapper .option"
+    ).click(function() {
+      $(this)
+        .parent()
+        .find(".option")
+        .removeClass("active");
+      $(this).addClass("active");
+      $(".selected-options").show();
+      $(".questions-container button.next").removeClass("disabled");
+      foodSelectorData.petWeight = $(this).attr("data-value");
+      console.log(foodSelectorData);
+      $(".selected-options .selected").text(
+        (foodSelectorData.petAge ? foodSelectorData.petAge + ", " : "") +
+          (foodSelectorData.petWeight ? foodSelectorData.petWeight : "")
+      );
+    });
+    $("body").on("click", ".finalStep", function() {
+      $(".food-selector-steps, .questions-container").hide();
+      $(".food-selector-result-wrapper").show();
+    });
+    $(".startOver").click(function(){
+      location.reload();
+    })
+    if ($(".questions-wrapper").slick("slickCurrentSlide") == 0) {
+      $(
+        ".questions-container button.prev, .questions-container button.next"
+      ).addClass("disabled");
+    }
+    $(".questions-wrapper").on("beforeChange", function(
+      event,
+      slick,
+      currentSlide,
+      nextSlide
+    ) {
+      $(".food-selector-wrapper .food-selector-steps").addClass(
+        "step" + (nextSlide + 1)
+      );
+      $(
+        ".food-selector-wrapper .food-selector-steps .food-selector-step"
+      ).removeClass("active");
+      $(
+        ".food-selector-wrapper .food-selector-steps .food-selector-step" +
+          (nextSlide + 1)
+      ).addClass("active");
+      if (nextSlide > 0) {
+        $(".questions-container button.prev").removeClass("disabled");
+      } else {
+        $(".questions-container button.prev").addClass("disabled");
+      }
+      if (nextSlide === 1) {
+        if (foodSelectorData.petAge) {
+          $(".questions-container button.next").removeClass("disabled");
+        } else {
+          $(".questions-container button.next").addClass("disabled");
+        }
+      }
+      if (nextSlide === 2) {
+        setTimeout(function(){
+          $(".questions-container button.next").addClass("finalStep");
+        }, 300)
+        if (foodSelectorData.petWeight) {
+          $(".questions-container button.next").removeClass("disabled");
+        } else {
+          $(".questions-container button.next").addClass("disabled");
+        }
+      } else {
+        $(".questions-container button.next").removeClass("finalStep");
+      }
     });
   }
-  initMap();
 });

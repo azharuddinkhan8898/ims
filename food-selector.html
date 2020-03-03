@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://kenwheeler.github.io/slick/slick/slick.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>IAMS</title>
+  </head>
+
+  <body>
+    <div id="loader">
+      <div><img src="images/loader.gif" /></div>
+    </div>
+    <header>
+      <div class="container-fluid">
+        <div class="logo pull-left">
+          <a href="/"><img src="images/logo.png" alt=""/></a>
+        </div>
+        <div id="navigation" class="pull-right">
+          <div class="menu-ico"><i></i></div>
+          <div id="main-nav">
+            <ul class="pull-left">
+              <li><a href="#">Why IAMS?</a></li>
+              <li>
+                <a href="#">Our Products</a>
+              </li>
+              <li><a href="#">Free Sample</a></li>
+              <li><a href="#">Food Selector</a></li>
+              <li><a href="#">Find The Perfect Petmate</a></li>
+              <li><a href="#">Articles</a></li>
+              <!-- <li><a href="#">Resources</a></li> -->
+              <li>
+                <a href="javascript:void(0)" class="button outline small buyNow"
+                  >Buy Now</a
+                >
+                <ul>
+                  <li>
+                    <a
+                      href="store-locator"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Store Locator');"
+                      ><img src="images/store-locator.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                  <li>
+                    <a
+                      href="https://www.amazon.in/s?i=pets&amp;bbn=4771342031&amp;rh=n%3A2454181031%2Cn%3A%214740420031%2Cn%3A4771342031%2Cn%3A4771395031%2Cp_89%3AIAMS&amp;dc&amp;hidden-keywords=B081VY4KCS%7CB081VXYRX9%7CB081VY96ZY%7CB081VXG85T%7CB0815L84C9%7CB0815L7WWQ%7CB0815L8XFN%7CB0815LD3NF%7CB0815LGC2T%7CB0815KXTY4%7CB0815LT44B%7CB0815LCJWG%7CB0815LTK2X%7CB0815LGB8V%7CB0815LF82M&amp;qid=1575523072&amp;rnid=4771342031&amp;ref=sr_nr_n_1/"
+                      target="_blank"
+                      onclick="ga('send','event','Top_Navigation','click','Amazon');"
+                      ><img src="images/amazon.jpg" alt="" title=""
+                    /></a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="banner">
+      <h1 class="banner-title">Dog Food Selector</h1>
+      <div id="main-slider">
+        <a href="javascript:void(0)" class="db"
+          ><img
+            src="images/food-selector-banner.png"
+            alt=""
+            title=""
+            width="100%"
+        /></a>
+        <a href="javascript:void(0)" class="mb"
+          ><img
+            src="images/food-selector-banner.png"
+            alt=""
+            title=""
+            width="100%"
+        /></a>
+      </div>
+    </section>
+    <section id="food-selector" class="food-selector">
+      <div class="container">
+        <div class="food-selector-wrapper text-center">
+          <h4>
+            Answer the questions below to find<br />the perfect food for your
+            pup!
+          </h4>
+          <img src="./images/food-selector-1.png" alt="" />
+          <div class="food-selector-steps">
+            <div class="food-selector-step food-selector-step1 active">
+              <span>1</span>
+            </div>
+            <div class="food-selector-step food-selector-step2">
+              <span>2</span>
+            </div>
+            <div class="food-selector-step food-selector-step3">
+              <span>3</span>
+            </div>
+            <div class="food-selector-step no-step food-selector-step4">
+              <img src="./images/food-selector-2.jpg" alt="" />
+            </div>
+          </div>
+          <div class="questions-container">
+            <div class="questions-wrapper">
+              <div class="question-wrapper question1">
+                <h5 class="question">My dog's name is:</h5>
+                <div class="options-wrapper">
+                  <div class="pet-name-wrapper">
+                    <input type="text" placeholder="Enter Name Here" />
+                  </div>
+                </div>
+              </div>
+              <div class="question-wrapper question2">
+                <h5 class="question">
+                  How old is <span class="pet-name">zcdas</span>?
+                </h5>
+                <div class="options-wrapper">
+                  <div class="option option1" data-value="PUPPY">
+                    <svg id="dog-puppy" viewBox="0 0 101.11 107.91">
+                      <title>dog-puppy</title>
+                      <path
+                        d="M99.12,61.45c.19-1.86-.59-1.08-2-2.6s-5.89-3.63-8.26-5.34c0,0-.12-6.11.06-10s0-6.57-1.17-8.52a7.39,7.39,0,0,1-.48-1,8.63,8.63,0,0,0-.06-5c-1-2.72-.22-3.69-1.16-5.68,1.67-.8,5.76-6.08,7.75-7.35,1.75-1.12,3.57-1.7,4.13-3.17.37-1,.34-2.37-.31-2.69s-1.66.2-2.5.34a7.76,7.76,0,0,1-1.64.1S94.57,9.66,95.6,9A5.12,5.12,0,0,0,97.9,7,4.82,4.82,0,0,0,98,3.73c-.19-.64.29-2.07-.42-2.61s-4.42.89-6.06,1.6a10.77,10.77,0,0,1-4.94,1A7.74,7.74,0,0,1,82,2.25c-1.43-1-2-.87-3.63-.58S71,1.83,68.83,3.94s-4.14,3.78-4.4,4.64S63,9.83,62,10.35a16.23,16.23,0,0,0-4.59,4.5,8.37,8.37,0,0,0-.91,4.89c.07.82,1.34-.15,1.34-.15s-1,3-.31,3.28,1.2-1,2.09-1.43S66,19.58,66,19.58s-2.74,8.76-2.61,10.55a63.36,63.36,0,0,1-7,4.38c-2,.82-5.2,2.43-6.43,3.94S45.49,41,43.5,41.92a32.65,32.65,0,0,0-7,5.34c-1.1,1.22-5.35,4.54-7.33,5-2.52.54-3.55,1.67-5.31,2.17s-3.5-.93-5.85-2.31a48,48,0,0,1-7.76-5.48c-2.08-2-1.41-5.72-1.64-6.56-.42-1.56-.8-4.33,0-6.21,1-2.36,1-4.12-1.39-4.57S4.8,30.59,3,33.55s-2.93,8-1,14c.63,2-1,4.69,2.83,7.37,1.05.74,1.32.77,1.87,1.85A28.51,28.51,0,0,0,8.05,60a3.55,3.55,0,0,0,2.13,1.68c.46.09.94,0,1.41.08,1.15.16,2,1.07,3.11,1.49,1.65.65,3.36-.69,4.72-.3.8.23.91.9,1.29,1.7.95,2,1.86,4,3,5.94,1.39,2.32,4.66,6.8,7.88,8.59s4,1.14,4.61,2,.23,3.45-1.82,6.78-3.21,4.46-1.94,6.12,2.94,2.92,4.36,5,5.27,6.56,7.23,7.48,5-.2,5.78-.06,2.12.08,2.09-.64a2.24,2.24,0,0,0-.55-1.29,21.1,21.1,0,0,0,3.25.37c1,0,1.2-.49.91-1.49s.67-4.27-1.79-4.65-6,0-6.6-2.27-.53-6.82.21-8.66.73-3.16,1-3.51.5-3.68,1.3-7.56,4.61-4.44,4.76-4.81,2.65-1.87,10-3.9,8.86-3.41,8.86-3.41,3.36,2.37,3.88,3.81,2,2.66,2.24,3.27-.65,2.17-1.48,3.28a4.37,4.37,0,0,0-.24,4.23,4.69,4.69,0,0,0,2.58,2.7c2.55.67,1.54-.53,4.9-3,3.71-2.68-.41-7.94,0-9.28s.19-1.92-1.73-4.33a44.42,44.42,0,0,0-4.85-4.94,4.82,4.82,0,0,1,2.7-1.32c1.8-.3,4.25.56,6.32,1.73s4.65,3.33,5.54,6.33-.91,5.29.38,6.87,3,3.56,4,2.09a18.34,18.34,0,0,0,2.54-6.23C100.65,67,98.92,63.31,99.12,61.45ZM88.24,53Zm.55.4-.52-.37Z"
+                        style="fill: none;stroke: #019844;stroke-miterlimit: 10;stroke-width: 2px"
+                      ></path>
+                    </svg>
+                    <span class="option-name"> PUPPY<br />(0-2 YEARS) </span>
+                  </div>
+                  <div class="option option2" data-value="ADULT">
+                    <svg id="dog-adult" viewBox="0 0 179.52 155.97">
+                      <title>dog-adult</title>
+                      <path
+                        d="M155.78,50.88c.59,0,.49-.69,2.56-1.48s2.27-3.65,2.18-5.13-.79-5.93.89-7.41,3.26-1.88,6.42-3.55a66.75,66.75,0,0,1,8.69-3.36c1.78-.69,1.48-.69,1.28-1.68s-1.38-.89-1.38-.89.79-1.58.3-1.78a2.17,2.17,0,0,0-2.07.1,9.56,9.56,0,0,1-3.26.4s2.77-1.68,4.84-2.77,2.17-2.57,2.28-3.95a10.17,10.17,0,0,0-.2-2.67,2,2,0,0,0-1.09-2.47c-1.68-.69-2.37-.1-4.35.4a43.75,43.75,0,0,1-7.71,1c-3.26.2-4.64-.89-4.94-1.39s0-1.68-1.78-1.68-3.75-.89-5.53-.69-2.57.69-4,0a7.83,7.83,0,0,1-2.37-2s0-1.68-3.75-5.43S137.5.79,137.5,1.18s2.76,4.15,3.26,4.94-.1,2.08.4,3.55l.49,1.48a5,5,0,0,1-2.86-1.88c-1.19-1.58-5.14-4-6.52-4.84S129.4,2.57,129.6,4s2.47,3,3.36,6.32-.2,5.93.69,7.8,1.48-.79.89,1.88-1.18,3.85-1.28,6.32.4,2.47-.79,5.33-3.16,4.74-3.65,7.41.59,2.57.59,2.57l-.49,1.88a5.58,5.58,0,0,0-4.44,1.38,56.13,56.13,0,0,1-10.27,8.1c-4.05,2.37-4.84,2.18-9.28,4.74s-15,8.59-23.32,15.9S66.17,84.86,60.84,94.14s-5.93,18.57-7.6,21.83a45.22,45.22,0,0,1-6.72,9.48,32.71,32.71,0,0,1-12.15,7.41c-4.94,1.58-8.17,5-18.44,1.71s-21,4-10.79,5.4c10.6,1.42,14.53,6.34,27.37,3s20.35-8.81,21.72-10.59,1.58-2.57,2.47-1.88,7.61,6.32,12.25,7.8,7.91,4.25,11.36,4.05,3.56.69,2.77,3.26-2,6.22,1.78,7.41S96.6,154.7,102,154.7s12.35-.2,17.29.2,4.25-1,5.93-1.39,1.38-1.87-1.58-3.25-3-2.17-5.43-2.47-4.15-1-9.39,0-9.39,2.86-12,.69-.7-3.36,0-5.63,4.34-3.85,6.72-6.12,4.35-8,4.25-14.52-3.45-8.79-3.45-8.79,3.66.49,9.38-2.37,9.48-5,9.48-5-.2,8-.2,10.27.3,8.69,1.09,11.46,3.85,5,5,6,3.46,3.06,5.33,2.67,5.33.79,5.73-1.09-.1-2.77-2.57-3.75-2-.2-3.56-1.58-1.68-4.25-1.78-6.33.79-6.42.89-8a28.14,28.14,0,0,1,.49-3.46s2,7.8,3.95,11.55a22.14,22.14,0,0,1,2.77,9.29,15.42,15.42,0,0,0,2.17,7c1,1.29,5.83,4.94,7.41,7.21s6.22,2.17,9.29,2,2.37-2.37,1.58-3.85-2.57-1.58-3.85-3-2.37.09-3.46-2.47-4.74-6-4.05-9.78S147.48,118.54,147,113s.79-11.65,3.16-15.61,7.11-16.1,7.11-19.37,2-8.19.69-13a73.54,73.54,0,0,0-2.86-9.38C154.69,55,155.78,50.88,155.78,50.88Z"
+                        style="fill: none;stroke: #019844;stroke-miterlimit: 10;stroke-width: 2px"
+                      ></path>
+                    </svg>
+                    <span class="option-name">ADULT<br />(2-7 YEARS) </span>
+                  </div>
+                  <div class="option option3" data-value="SENIOR">
+                    <svg id="dog-senior" viewBox="0 0 98.9 146.16">
+                      <title>dog-senior</title>
+                      <path
+                        d="M61.45,23.31s-.47,4.42-2.8,2.24-5.26-8.83-4.71-10.9a6.24,6.24,0,0,1,3.76-4.43,32.22,32.22,0,0,0,7.4-6c2-2.11,3.47-.52,3.47-.52a16.62,16.62,0,0,1,5.27-2c2.86-.5,4.32.27,5.74,0s4.06-1.36,6.35-.2A7.2,7.2,0,0,1,89.11,4.7a32.9,32.9,0,0,1,4.6,2.72c2.52,1.76,4.64,4,4.11,6.64S95.33,19.47,96,20.89s.54,3.88-1.5,4.35-3-2.57-3-2.57.36,4.71-.64,5.56l-1,.85a9.55,9.55,0,0,1-2.52,1.34,7,7,0,0,1-1.53.23s1.77,4,1.63,6.1-1,8-1.33,9.68.78,5.1,1.09,8.17,1.64,6.31,1.15,10.22-3.73,11.4-5.29,14.12-3.47,6.88-3.42,8.31.34,10.66.05,14.36,1.14,10,2.08,13.68.15,4.51,0,7.18,1.06,7.35,1.32,9.19a6.93,6.93,0,0,0,2.18,4c.63.39,3.09.31,4.34.89a8.38,8.38,0,0,1,3.17,2.77c.43.8,2.58,3.81,2.19,4.44s-2.85.71-2.85.71l-4.51.15c-1.43,0-5.54,0-6.4-1.44s-3.54-1.53-3.82-4-1.65-6.71-2.28-7.11-2.68-.32-3.13-1.54,0-7-1.35-10.21a64.4,64.4,0,0,1-3.51-13.42,21.89,21.89,0,0,0-1.2-5.5,7.66,7.66,0,0,1-5.47,2.23c-3.69.12-7.08,2.9-9.41,7.28a50.38,50.38,0,0,0-3.25,7.28s-2.23,7.25-4.82,9.59a20,20,0,0,0-4.13,5.67,8.82,8.82,0,0,0,4.55,1.29c2.46-.08,6.75-.63,9.21-.71s6.13-.81,7.18,0,3.35,2.15,3.38,3a2.87,2.87,0,0,1-.77,1.67s-.35,1.86-3.39,3a14.68,14.68,0,0,1-6.76.42s-2.15,3.35-5.85,3.06a101.46,101.46,0,0,0-13.56-.59c-6.15.2-13.18-1.63-15.42-1.14s-4.92.16-5.76-.43-.89-2.23-.89-2.23a8.07,8.07,0,0,1-4.71.15c-2.28-.75-2.32-2-2.57-3.4S.78,132.38,1,126.84,6.12,103,10,95.44,22.47,75.55,26,72s19.5-25,21.07-27.14,3.36-2.63,8.73-9.31C59.4,31.09,61.64,22.89,61.45,23.31Z"
+                        style="fill: none;stroke: #019844;stroke-miterlimit: 10;stroke-width: 2px"
+                      ></path>
+                    </svg>
+                    <span class="option-name"> SENIOR<br />(7+ YEARS) </span>
+                  </div>
+                </div>
+              </div>
+              <div class="question-wrapper question3">
+                <h5 class="question">
+                  What size ​breed is <span class="pet-name">zcdas</span>?
+                </h5>
+                <div class="options-wrapper">
+                  <div class="option option1" data-value="SMALL">
+                    <svg id="dog-small" viewBox="0 0 85.51 86.72">
+                      <title>dog-small</title>
+                      <path
+                        d="M18.56,79a15.15,15.15,0,0,1-.28-8.7c1.93-8.13,12.7-17.44,16-20.59C40,44.21,49.18,40,51.73,36.22,54,31.63,54.14,18.36,60,13.94h0a5.09,5.09,0,0,1,2-2.48C64.23,8.34,68.67,4.81,69.63,0c2.05,2.25,1.15,7.78.25,11.21H70c6.41,0,11.47,3.72,9.9,10.8,1.51.84,2.3.75,4.49,1.12,1.3.32,1.32,1.44.94,2.69v0h0c-.06.71.13,2.61-1.52,3.49.33.52-.23.72-1,1.25-1.65,1.07-4,1-5.67,1.36l-.78,0a14.68,14.68,0,0,0-4,3.79c-.28,2.91-.06,6.62-.06,8.93,1.1,4.41,3,7.21,2.84,11.24-.07,2.47-1,3.89-2.89,5.8.15,3.69,3.63,11.28,5.64,17.54a6.47,6.47,0,0,1,1.55,1.9c1.63,1.76,4.2.93,4.3,4,0,1.39-1,1.15-2,1.18l-.14,0c-.86.58-3.21.24-5,.15-2.16-.12-2.55-2.51-3.36-4-.61-1.08-1-2-1.54-2.95-.88.79-.84-.1-1.38-2.13a67.63,67.63,0,0,0-3.3-6h0c-.8-1.37-1.63-2.83-2.34-4.17C62.52,69.66,54.33,70,50.06,70.6c-2.12.3-2.23,2.43-4,3.8a7.87,7.87,0,0,1-.63,3.34c-1.19,2.8-4,4.09-7.53,4.73,2.75,0,5.38-.62,6.28-.36,2.26.66,5,2.25,3.65,4.15-.72,1-16.71.08-20.1,0-1.77,0-2.17-.82-1.93-1.59l-.16.07A5.92,5.92,0,0,1,21,82.84c-3.64,3.1-8.7,2.62-14.57,2.7-5.41.07-1-.21-6.41-.12C4.29,80.6,14.87,84.13,18.56,79Z"
+                        style="fill: transparent;stroke: #094;stroke-miterlimit: 10;stroke-width: 1.75px;"
+                      ></path>
+                    </svg>
+                    <span class="option-name">SMALL<br />(0-20 LBS) </span>
+                  </div>
+                  <div class="option option2" data-value="MEDIUM">
+                    <svg id="dog-medium" viewBox="0 0 117.34 111.15">
+                      <title>dog-medium</title>
+                      <path
+                        d="M82.06,8.43s-1.61,3.38-3.55,3.7-2.42-5.64-2.42-6.2c0,0,2.58-.49,3.54-1.69a7,7,0,0,1,4-2.74c1.61-.24,2-1.45,6.84.32S97,3,97.28,2.79s3.94.08,4.91,1.21,2,.72,2.5,1.13.73,2.17,1.69,3.38,5.8,3.95,8.38,3.22c0,0,1.85,0,1.7,2.5s-.41,3.38-.16,4a4.59,4.59,0,0,1-.57,3.54c-.8,1.21-1.61,1.29-2.33,3s-1.53,1.85-2.5,1.85-3.62,2-6.36.4-4,2.74-4.87,3-2.66,2.9-2.54,5.44,1.81,5.44,2.41,9.06.85,13.17-4.35,18.36-.48,21.87-.48,21.87a9.62,9.62,0,0,1,.84,4.47c-.24,2.17,2.42,8.22,2.78,8.7s5.68,1.33,7,3,1.81,2.42,0,2.66-6.76.72-7.37.24-1,.36.24,1,4.23,3.86,2.66,5-6.16.12-6.52.12-3.26.48-3.87-.73-3.15-10.51-3.15-10.51-.48.84-1.32-2.9-.73-4.23-1.7-7S81.53,78.1,81.53,78.1a38.34,38.34,0,0,1-8.7,3.14c-4,.72-7.48,4.1-9.06,7.13s-4.35,8.7-6,9.55,9.18,0,9.54,0,4.59,1.57,2.78,4-5,1.93-6.53,1.69a24.46,24.46,0,0,0-4.71.12s2.54,2.05.73,4.47-29.72.72-29.72.72S29,103.72,31.27,103s-3.63,0-3.63,0-3.26,3.63-14.86,3.63-14.14-1.33-10.15-1.81,15.46.72,18.12-1.69,3.51-3.63,4.84-7.49S30.18,76.77,35,72.9,44.2,59.61,55.56,52.25c0,0,18-18.37,18-20.18a8.92,8.92,0,0,1,1.69-5.56,33.89,33.89,0,0,0,3.38-8.58c0-.73,1.33-5.31,3.87-6.89S82.06,8.43,82.06,8.43Z"
+                        style="fill: transparent;stroke: #094;stroke-miterlimit: 10;stroke-width: 1.75px;"
+                      ></path>
+                    </svg>
+                    <span class="option-name">MEDIUM<br />(20-50 LBS) </span>
+                  </div>
+                  <div class="option option3" data-value="LARGE">
+                    <svg id="dog-large" viewBox="0 0 150.26 126.01">
+                      <title>dog-large</title>
+                      <path
+                        d="M76.77,55.14a6.24,6.24,0,0,0,1.4-.27s-8.59,7.19-9.76,7.46a10.88,10.88,0,0,0,2.91-.86s-11.2,8.8-13.25,10.75a7.6,7.6,0,0,1,2.05-.68S56,75.72,55,77.63a19.1,19.1,0,0,1,4.25-2.74,54.94,54.94,0,0,1-7,7.6c-3.83,3.32-6.3,8.87-7,11.33s-1.27,4.45-2.23,5.65a14.69,14.69,0,0,0-2.7,5.14,2.63,2.63,0,0,1-2.43,2.16s.21.68,1.3.55c0,0-7.87,4.25-10.92,4.25a13.34,13.34,0,0,1-5.31-1.1v.65s-8.8-2.4-11.33-4.45-6.2-9-5.85-10.44-3.63,5.27-4.42,7.91a7.22,7.22,0,0,0-.17,4.28s.41-2.36,1.06-2.91c0,0,.21,7.74,1.4,9A4.57,4.57,0,0,1,4,112a11.75,11.75,0,0,0,1.88,3.6s0-1.54.41-1.75a15.18,15.18,0,0,0,7.12,5.89s-.41-.72-.24-1a23.14,23.14,0,0,0,7.05,2.16,57.84,57.84,0,0,0,7.67.31,1,1,0,0,1-.51.75,82.36,82.36,0,0,0,10.55-.17c3.83-.48,5.48-1,7.46-2.19s2.64-3.32,3.29-3.66a.89.89,0,0,1,1.06.07s-.27,2.47.21,3.12,2.05.51,2.43.79a.94.94,0,0,1,.41,1.3c-.31.68-.51,2,.72,2.33s11,.48,15.34.21,7.57-.24,8.77-.55,1.44-.92,1.44-.92a2.93,2.93,0,0,0,2.4,1.23A2.78,2.78,0,0,0,84,121.94a2,2,0,0,0,0-1.47s.72,0,.41-1.13a5.15,5.15,0,0,0-4.28-3.22s1.3-.27,1.68-.41c0,0,3.66,1,4.9.75s1.06-1.23,1.06-1.23a1.79,1.79,0,0,0,0-2.05,5.07,5.07,0,0,0-2-1.4,3.42,3.42,0,0,1-1-1c-.21-.45.51-1.75.41-3.22s-2-3.12-2-3.12a4.48,4.48,0,0,1,.65-1.57c.34-.27,2.57,0,3.29-.21a3.16,3.16,0,0,0,1.3-.75,2.38,2.38,0,0,0,1.88.24,3.48,3.48,0,0,0,1.51-1.1,12,12,0,0,1,.51,2.6s3-3.53,3.77-5.55c0,0,.89,6.68.48,7.87l.55-.55s.65,4-.41,5.51a2.6,2.6,0,0,0,1.23-.58s-.31,2.5-1.2,3.12a8.2,8.2,0,0,0,2.5-.51s.55,1.4,0,2a2.24,2.24,0,0,0,1.71-.31s1.06,3.63.68,4.45a1.1,1.1,0,0,0,.08,1.27,1.66,1.66,0,0,1,.57-.82s-.65,2.47,1,3.53a6.76,6.76,0,0,0,3.7.92,9.89,9.89,0,0,0,4.35,1.06,2.82,2.82,0,0,0,2.43-1.27,4.58,4.58,0,0,0,2.36-.17c1-.45,1.92-1.57,1.37-2.26s-.27-1.06-.75-1.54a4.94,4.94,0,0,0-2.05-1.1c-.75-.21-3.12-.45-4.07-1.37s-1.16-3.94-1.16-3.94a17.31,17.31,0,0,0,1.23,2.77s.17-.51.38-.48,4,1.78,5.1,1.47a8.61,8.61,0,0,1,1.92-.45,9.4,9.4,0,0,0,3.29-.48,2.11,2.11,0,0,0,.34-2.77,2.91,2.91,0,0,0-1.16-.72,3.42,3.42,0,0,0-2.23-.92,2.93,2.93,0,0,0-1.75-.75,2.87,2.87,0,0,1-2.33-.72,41.94,41.94,0,0,1-1.57-4.31,3.23,3.23,0,0,0,.55-2.57,20.07,20.07,0,0,1-.92-5.2c.07-1.23.41-3.49.41-3.49s.17.58.51.75c0,0-.17-4.38.58-6.47a26.23,26.23,0,0,1,1.85-3.94,3.48,3.48,0,0,0,.68,1.61s3.12-7,4.42-8.56,5.17-4.21,7-5.55,3.22-6,3-7.26a8.14,8.14,0,0,1,.27,3.18,4,4,0,0,0,1-2,35.4,35.4,0,0,0,.21-4.93,7.67,7.67,0,0,1,.79,2,10.74,10.74,0,0,0-.41-5.14c-.92-2.36-2.26-6.51-2.19-8.25s.62-2.19.62-2.19h.65a44.06,44.06,0,0,1-1.47-5.58c-.79-3.73-.48-5.14-.48-5.14a5.14,5.14,0,0,1,.62,1.75s.55-2.57-.45-3.87a4.88,4.88,0,0,1-1.16-4.14c.34-1.47.58-2.05,1-2.09a5.66,5.66,0,0,0,2,0,4.33,4.33,0,0,0,2.12-1.57,13.21,13.21,0,0,1,3.73,0c1.78.31,3.83.55,4.79-.14s1.47-1.37,1.85-1.47.62-1.54.62-1.54a20.85,20.85,0,0,1,1.78,1.16c.34.31,1.06.21,1-.41a11.58,11.58,0,0,0-2.12-3.36,12.46,12.46,0,0,0-1.81-1.06l-1-.24a37.56,37.56,0,0,0-5.68-1,9.67,9.67,0,0,1,2.7-.82,9.84,9.84,0,0,0,3.66-.68,16.59,16.59,0,0,0,3.42-2.67s1-.34,1.16-1a25.91,25.91,0,0,1,.72-3.46c.34-.68,1.37-1.75.51-2.29A8.87,8.87,0,0,0,145.83,8a11.58,11.58,0,0,0-3.29-.72c-1.13.07-5.65.33-6.68,0a23.1,23.1,0,0,1-4.52-2.73c-.65-.58-.55-1.3-1.23-1.61s-1.64-1.81-3.32-2.05-8.56,1-10.2,1a5.43,5.43,0,0,0-3.77.89c-.65.65-4.35,4.83-5,5.27a5.72,5.72,0,0,0-1.61,2.4c-.21.62-.79,4.38-1.16,4.9,0,0,.86-.34,1-.72,0,0-3.87,8.11-5,9a3.83,3.83,0,0,0-1.3,2.23,5.58,5.58,0,0,1,1.68-1,18.63,18.63,0,0,1-1.34,3.49c-.55.75-2.16,2.43-2.5,3.08a2.92,2.92,0,0,1,.92-.14,52.34,52.34,0,0,1-3.87,5c-1.27,1.23-4.93,5.92-6.27,6.37,0,0,.72.48,1.16.24C89.51,42.81,78.83,54.49,76.77,55.14Z"
+                        style="fill: none;stroke: #094;stroke-miterlimit: 10;stroke-width: 1.75px"
+                      ></path>
+                    </svg>
+                    <span class="option-name">LARGE<br />(50+ LBS) </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="prev button button-green">BACK</button>
+            <button class="next button button-green">NEXT</button>
+            <p>&nbsp;</p>
+            <p class="selected-options">
+              Selected: <span class="selected bold"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="food-selector-result-wrapper" style="display: none;">
+        <div class="container">
+          <div class="food-selector-result text-center">
+            <h4 class="green-color" style="text-transform: none;"><span class="pet-name"></span> is one special dog!</h4>
+            <p>See <span class="pet-name"></span>'s tailored recipe below.</p>
+            <div class="product-result-wrapper">
+              <div class="product-result" data-value="">
+                <img src="./images/product3-main-1.png" alt="" />
+                <span class="green-color">
+                  IAMS™ PROACTIVE HEALTH™<br />
+                  Mother & Baby Dog
+                </span>
+                <a class="button button-green">BUY NOW</a>
+              </div>
+              <div class="product-result">
+                <img src="./images/product1-main-1.png" alt="" />
+                <span class="green-color">
+                  IAMS™ PROACTIVE HEALTH™<br />
+                  Adult Dog
+                </span>
+                <a class="button button-green">BUY NOW</a>
+              </div>
+              <div class="product-result" data-value="ADULT SMALL">
+                <img src="./images/product2-main-1.png" alt="" />
+                <span class="green-color">
+                  IAMS™ PROACTIVE HEALTH™<br />
+                  Adult Dog Small Breed
+                </span>
+                <a class="button button-green">BUY NOW</a>
+              </div>
+            </div>
+            <p class="tab-container margin-top-bottom-50">
+              Our Smart Puppy recipe is uniquely tailored to help make your
+              puppy smarter and more trainable with essential DHA for strong
+              brain development, bringing out their unique and playful best.
+            </p>
+            <img src="./images/food-selector-3.png" alt="" /><br />
+            <button class="button button-white margin-top-bottom-25 startOver">
+              START OVER
+            </button>
+          </div>
+        </div>
+        <div class="not-expected-wrapper gray-up-curve text-center">
+          <div class="gray-up-curve-image">
+            <img src="images/gray-up-curve.jpg" style="width: 100%;" />
+          </div>
+          <div class="container">
+            <div class="not-expected padding-top-bottom-50">
+              <h4 style="text-transform: none;">
+                Not what you expected?<br /><br />Check out these other recipes
+                based on your answers.
+              </h4>
+              <div class="product-result-wrapper">
+                <div class="product-result">
+                  <img src="./images/product3-main-1.png" alt="" />
+                  <span class="green-color">
+                    IAMS™ PROACTIVE HEALTH™<br />
+                    Mother & Baby Dog
+                  </span>
+                  <a class="button button-green">BUY NOW</a>
+                </div>
+                <div class="product-result">
+                  <img src="./images/product1-main-1.png" alt="" />
+                  <span class="green-color">
+                    IAMS™ PROACTIVE HEALTH™<br />
+                    Mother & Baby Dog
+                  </span>
+                  <a class="button button-green">BUY NOW</a>
+                </div>
+              </div>
+              <p>&nbsp;</p>
+              <a href="#"
+                ><h4
+                  style="font-size: 20px;text-decoration: underline;"
+                  class="green-color"
+                >
+                  View all dog products
+                </h4></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="social green-bg text-center">
+        <span>CONNECT WITH</span>
+        <a href="#"><img src="./images/fb-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/yt-icon.png" alt=""/></a>
+        <a href="#"><img src="./images/insta-icon.png" alt=""/></a>
+      </div>
+      <div class="footer-wrapper">
+        <div class="links clearfix">
+          <a href="#">Home</a>
+          <a href="#">Why IAMS?</a>
+          <a href="#">Products</a>
+          <a href="#">History</a>
+          <a href="#">Resources</a>
+          <a href="#">Money Back</a>
+          <a href="#">Store Locator</a>
+          <a href="#">Privacy</a>
+          <a href="#">Legal</a>
+        </div>
+        <div class="copy-right text-center white-color">
+          <p>
+            © 2020 Mars or Affiliates. US Patents Pending.<br />Other trademarks
+            are property of their respective owners.
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./scripts/bootstrap.select.js"></script>
+    <script src="./scripts/custom.js"></script>
+  </body>
+</html>
